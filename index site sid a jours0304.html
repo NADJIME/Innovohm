@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Innov OHM &mdash; Sp&eacute;cialiste Habitat Connect&eacute; | Nord-Pas-de-Calais</title>
+<meta name="description" content="Innov OHM, sp&eacute;cialiste habitat connect&eacute; &agrave; Houdain. Nord-Pas-de-Calais."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+
+    :root{--yellow:#f5c518;--yellow-dark:#d4a80f;--yellow-glow:rgba(245,197,24,0.12);--black:#080808;--dark:#0f0f0f;--dark2:#161616;--dark3:#1e1e1e;--dark4:#272727;--white:#ffffff;--grey:#9a9a9a;--light-grey:#d0d0d0;--red:#e84040;--green:#25D366;--font-display:'Barlow Condensed',sans-serif;--font-body:'Barlow',sans-serif}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}body{font-family:var(--font-body);background:var(--black);color:var(--white);overflow-x:hidden}
+    ::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--dark)}::-webkit-scrollbar-thumb{background:var(--yellow)}
+    .container{max-width:1200px;margin:0 auto;padding:0 24px}
+    .section-tag{display:inline-block;font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--yellow);border:1px solid var(--yellow);padding:4px 12px;margin-bottom:16px}
+    .section-title{font-family:var(--font-display);font-size:clamp(2.2rem,5vw,3.6rem);font-weight:900;text-transform:uppercase;line-height:1;letter-spacing:-0.5px}
+    .section-title span{color:var(--yellow)}
+    .section-sub{font-size:1.05rem;color:var(--grey);max-width:560px;line-height:1.65;margin-top:14px}
+    .btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:700;font-size:1rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;padding:16px 32px;cursor:pointer;transition:all 0.2s ease;border:none}
+    .btn-primary{background:var(--yellow);color:var(--black)}.btn-primary:hover{background:var(--white);transform:translateY(-2px);box-shadow:0 8px 30px rgba(245,197,24,0.35)}
+    .btn-outline{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,0.3)}.btn-outline:hover{border-color:var(--yellow);color:var(--yellow)}
+    .topbar{background:var(--yellow);padding:8px 24px;text-align:center;font-family:var(--font-display);font-size:0.9rem;font-weight:700;color:var(--black)}
+    .topbar a{color:var(--black);text-decoration:none;font-weight:900}
+    nav{position:sticky;top:0;z-index:1000;background:rgba(8,8,8,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,0.06)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
+    .logo{font-family:var(--font-display);font-size:1.7rem;font-weight:900;text-decoration:none;color:var(--white);letter-spacing:-1px;display:flex;align-items:center;gap:2px}
+    .logo span{color:var(--yellow)}.logo-bolt{width:24px;height:24px;margin-right:6px}
+    .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+    .nav-links a{font-family:var(--font-display);font-weight:600;font-size:0.9rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;color:var(--grey);transition:color 0.2s}
+    .nav-links a:hover,.nav-links a.active{color:var(--yellow)}
+    .nav-cta{display:flex;align-items:center;gap:14px}
+    .nav-phone{font-family:var(--font-display);font-weight:700;font-size:1rem;color:var(--yellow);text-decoration:none}.nav-phone:hover{color:var(--white)}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+    .hamburger span{display:block;width:26px;height:2px;background:var(--white);transition:all 0.3s}
+    .hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+    .hamburger.open span:nth-child(2){opacity:0}
+    .hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+    .mobile-menu{display:none;flex-direction:column;background:var(--dark);padding:16px 24px;border-top:1px solid rgba(255,255,255,0.07)}
+    .mobile-menu.open{display:flex}
+    .mobile-menu a{font-family:var(--font-display);font-size:1.2rem;font-weight:700;text-transform:uppercase;color:var(--white);text-decoration:none;padding:13px 0;border-bottom:1px solid rgba(255,255,255,0.05)}
+    .mobile-menu a:hover{color:var(--yellow)}.m-phone{color:var(--yellow)!important;margin-top:8px}
+    @media(max-width:900px){.nav-links,.nav-phone{display:none}.hamburger{display:flex}}
+    @media(max-width:600px){.nav-cta .btn{display:none}}
+    .footer{background:var(--dark);padding:70px 0 30px;border-top:1px solid rgba(255,255,255,0.06)}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:50px}
+    @media(max-width:900px){.footer-grid{grid-template-columns:1fr 1fr}}@media(max-width:500px){.footer-grid{grid-template-columns:1fr}}
+    .footer-col h4{font-family:var(--font-display);font-size:0.9rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--yellow);margin-bottom:16px}
+    .footer-col p{font-size:0.85rem;color:var(--grey);line-height:1.65;margin-bottom:12px}
+    .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+    .footer-col ul li a{font-size:0.85rem;color:var(--grey);text-decoration:none;transition:color 0.2s}.footer-col ul li a:hover{color:var(--yellow)}
+    .certif{display:inline-block;font-size:0.72rem;color:var(--yellow);border:1px solid rgba(245,197,24,0.2);background:rgba(245,197,24,0.05);padding:3px 10px;margin-top:8px;font-family:var(--font-display)}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,0.05);padding-top:24px;text-align:center;font-size:0.78rem;color:rgba(255,255,255,0.25)}
+    .floating-cta{position:fixed;bottom:24px;right:24px;display:flex;flex-direction:column;gap:10px;z-index:900}
+    .floating-btn{width:52px;height:52px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.3rem;text-decoration:none;border:none;transition:all 0.2s;box-shadow:0 4px 20px rgba(0,0,0,0.4)}
+    .float-wa{background:var(--green);color:var(--black)}.float-wa:hover{background:#1da851;transform:scale(1.08)}
+    .float-phone{background:var(--yellow);color:var(--black)}.float-phone:hover{background:var(--white);transform:scale(1.08)}
+    .fade-in{opacity:0;transform:translateY(20px);transition:opacity 0.55s ease,transform 0.55s ease}.fade-in.visible{opacity:1;transform:none}
+    .page-header{padding:80px 0 60px;background:linear-gradient(180deg,var(--dark) 0%,var(--black) 100%);position:relative;overflow:hidden}
+    .page-header::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(245,197,24,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(245,197,24,0.03) 1px,transparent 1px);background-size:50px 50px}
+    .page-header-content{position:relative;z-index:2}
+    sup.ps{color:var(--yellow);font-size:0.6em;font-weight:700;vertical-align:super;margin-left:1px}
+
+    .hero{position:relative;min-height:88vh;display:flex;flex-direction:column;justify-content:center;overflow:hidden;padding:80px 0 60px}
+    .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 75% 50%,rgba(245,197,24,0.07) 0%,transparent 70%),linear-gradient(180deg,#0f0f0f 0%,#080808 100%)}
+    .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(245,197,24,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(245,197,24,0.04) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 30%,transparent 100%)}
+    .hero-content{position:relative;z-index:2}
+    .hero-eyebrow{font-family:var(--font-display);font-size:0.85rem;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--yellow);margin-bottom:20px;display:flex;align-items:center;gap:10px}
+    .hero-eyebrow::before{content:'';display:block;width:32px;height:2px;background:var(--yellow)}
+    .hero-title{font-family:var(--font-display);font-size:clamp(3.2rem,9vw,6.5rem);font-weight:900;text-transform:uppercase;line-height:0.92;letter-spacing:-2px;margin-bottom:24px}
+    .hero-title .l1,.hero-title .l2{display:block}.hero-title .l2{color:var(--yellow)}
+    .hero-title .l3{display:block;font-size:50%;font-weight:400;letter-spacing:0;color:var(--grey);margin-top:10px}
+    .hero-desc{font-size:1.05rem;color:var(--grey);max-width:500px;line-height:1.7;margin-bottom:36px}
+    .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:48px}
+    .hero-trust{display:flex;gap:24px;flex-wrap:wrap}
+    .trust-item{display:flex;align-items:center;gap:10px;font-size:0.85rem;color:var(--grey)}
+    .trust-icon{width:34px;height:34px;background:var(--yellow-glow);border:1px solid rgba(245,197,24,0.2);display:flex;align-items:center;justify-content:center;font-size:0.95rem;flex-shrink:0}
+    .section-services{padding:100px 0;background:var(--dark2);position:relative}
+    .section-services::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--yellow),transparent)}
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:50px}
+    @media(max-width:900px){.services-grid{grid-template-columns:1fr 1fr}}@media(max-width:500px){.services-grid{grid-template-columns:1fr}}
+    .service-card{background:var(--dark3);padding:28px 22px;text-decoration:none;display:block;border-bottom:3px solid transparent;transition:all 0.3s;position:relative}
+    .service-card::after{content:'92';position:absolute;bottom:16px;right:16px;font-size:1.4rem;color:rgba(255,255,255,0.1);transition:all 0.3s}
+    .service-card:hover{background:var(--dark4);border-bottom-color:var(--yellow)}.service-card:hover::after{color:var(--yellow)}
+    .service-icon{font-size:2rem;margin-bottom:12px;display:block}
+    .service-name{font-family:var(--font-display);font-size:1.25rem;font-weight:900;text-transform:uppercase;color:var(--white);margin-bottom:6px;line-height:1.1}
+    .service-desc{font-size:0.83rem;color:var(--grey);line-height:1.5;margin-bottom:10px}
+    .service-price{font-family:var(--font-display);font-size:0.95rem;font-weight:700;color:var(--yellow)}
+    .section-process{padding:100px 0;background:var(--black)}
+    .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:50px}
+    @media(max-width:850px){.process-grid{grid-template-columns:1fr 1fr}}@media(max-width:500px){.process-grid{grid-template-columns:1fr}}
+    .process-step{background:var(--dark2);padding:28px 20px;border-top:3px solid transparent;transition:border-color 0.3s}.process-step:hover{border-top-color:var(--yellow)}
+    .process-num{font-family:var(--font-display);font-size:3rem;font-weight:900;color:rgba(245,197,24,0.1);line-height:1;margin-bottom:10px}
+    .process-icon{font-size:1.7rem;margin-bottom:10px;display:block}
+    .process-title{font-family:var(--font-display);font-size:1.1rem;font-weight:900;text-transform:uppercase;color:var(--white);margin-bottom:8px}
+    .process-title span{color:var(--yellow)}.process-desc{font-size:0.82rem;color:var(--grey);line-height:1.6}
+    .process-note{display:inline-block;margin-top:10px;background:rgba(37,211,102,0.06);border:1px solid rgba(37,211,102,0.15);color:var(--green);font-size:0.7rem;font-family:var(--font-display);font-weight:700;padding:3px 8px}
+    .section-zone-mini{padding:80px 0;background:var(--dark2)}
+    .zone-mini-inner{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+    @media(max-width:750px){.zone-mini-inner{grid-template-columns:1fr;gap:30px}}
+    .zone-cities-wrap{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+    .zone-city{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);color:var(--light-grey);font-size:0.8rem;font-family:var(--font-display);font-weight:600;padding:4px 10px}
+    .zone-city.hl{background:rgba(245,197,24,0.08);border-color:rgba(245,197,24,0.25);color:var(--yellow)}
+    .section-cta-final{padding:100px 0;background:var(--yellow);text-align:center}
+    .cta-title{font-family:var(--font-display);font-size:clamp(2.5rem,6vw,4.5rem);font-weight:900;text-transform:uppercase;color:var(--black);line-height:1;margin-bottom:16px;letter-spacing:-1px}
+    .cta-sub{font-size:1rem;color:rgba(0,0,0,0.6);margin-bottom:36px;max-width:480px;margin-left:auto;margin-right:auto}
+    .cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+    .btn-dark{background:var(--black);color:var(--yellow)}.btn-dark:hover{background:var(--dark2)}
+    .btn-wad{background:var(--green);color:var(--black)}.btn-wad:hover{background:#1da851}
+
+.page{display:none}.page.active{display:block}
+.btn-green{background:var(--green);color:var(--black);display:inline-flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:700;font-size:.9rem;letter-spacing:1px;text-transform:uppercase;padding:14px 28px;transition:all .2s;border:none;cursor:pointer}.btn-green:hover{background:#1da851}
+.price-asterisk{color:var(--yellow);font-size:.6em;font-weight:700;vertical-align:super;margin-left:1px}
+.cta-band{padding:80px 0;background:var(--dark);border-top:1px solid rgba(255,255,255,.06);text-align:center}
+.cta-band h2{font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);font-weight:900;text-transform:uppercase;color:var(--white);margin-bottom:10px}
+.cta-band p{color:var(--grey);margin-bottom:28px}
+.mentions-section{padding:30px 0;background:var(--black)}
+.mentions-box{background:var(--dark2);border-left:4px solid var(--yellow);padding:20px 28px;display:flex;gap:14px;align-items:flex-start}
+.mentions-star{font-family:var(--font-display);font-size:2rem;font-weight:900;color:var(--yellow);line-height:1;flex-shrink:0}
+.mentions-text{font-size:.82rem;color:var(--grey);line-height:1.65}
+.mentions-text strong{color:var(--white)}
+.wa-overlay{position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:9999;display:none;align-items:center;justify-content:center;padding:20px}
+.wa-overlay.open{display:flex}
+.wa-modal{background:var(--dark2);width:100%;max-width:480px;max-height:90vh;overflow-y:auto;position:relative}
+.wa-close{position:absolute;top:14px;right:16px;background:none;border:none;color:var(--grey);font-size:1.2rem;cursor:pointer;z-index:1}.wa-close:hover{color:var(--white)}
+.wa-modal-header{background:var(--green);padding:20px 24px;display:flex;align-items:center;gap:14px}
+.wa-modal-icon{font-size:1.8rem}
+.wa-modal-header-text h3{font-family:var(--font-display);font-size:1.2rem;font-weight:900;text-transform:uppercase;color:var(--black)}
+.wa-modal-header-text p{font-size:.82rem;color:rgba(0,0,0,.7)}
+.wa-modal-body{padding:24px}
+.wa-steps{display:flex;gap:4px;margin-bottom:24px}
+.wa-step{flex:1;height:4px;background:rgba(255,255,255,.1);transition:background .3s}
+.wa-step.active{background:var(--green)}
+.wa-step-content{display:none}.wa-step-content.active{display:block}
+.wa-step-label{font-size:.72rem;font-family:var(--font-display);font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--grey);margin-bottom:6px}
+.wa-step-title{font-family:var(--font-display);font-size:1.4rem;font-weight:900;text-transform:uppercase;color:var(--white);margin-bottom:4px}
+.wa-step-sub{font-size:.85rem;color:var(--grey);margin-bottom:18px}
+.wa-options{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.wa-option{background:var(--dark3);border:1px solid rgba(255,255,255,.08);color:var(--white);font-family:var(--font-display);font-size:.9rem;font-weight:700;padding:14px;cursor:pointer;transition:all .2s;text-align:center}
+.wa-option:hover,.wa-option.selected{background:rgba(37,211,102,.15);border-color:var(--green);color:var(--green)}
+.wa-input{width:100%;background:var(--dark3);border:1px solid rgba(255,255,255,.08);color:var(--white);font-family:var(--font-body);font-size:.95rem;padding:14px 16px;outline:none;margin-bottom:10px;resize:vertical}
+.wa-input:focus{border-color:var(--green)}
+.wa-input::placeholder{color:rgba(255,255,255,.2)}
+.wa-preview{background:rgba(37,211,102,.07);border:1px solid rgba(37,211,102,.2);padding:12px 14px;margin-top:8px;font-size:.82rem;color:var(--grey);line-height:1.6;min-height:60px}
+.wa-modal-footer{padding:16px 24px;border-top:1px solid rgba(255,255,255,.06);display:flex;justify-content:space-between;gap:10px}
+.wa-btn-back{background:none;border:1px solid rgba(255,255,255,.1);color:var(--grey);font-family:var(--font-display);font-weight:700;font-size:.85rem;padding:10px 20px;cursor:pointer}
+.wa-btn-next{background:var(--green);color:var(--black);border:none;font-family:var(--font-display);font-weight:900;font-size:.9rem;letter-spacing:1px;text-transform:uppercase;padding:14px 24px;cursor:pointer;transition:all .2s;flex:1}
+.wa-btn-next:disabled{opacity:.3;cursor:not-allowed}
+.wa-btn-next:not(:disabled):hover{background:#1da851}
+
+    .packs-section { padding: 80px 0; }
+    .packs-section + .packs-section { border-top: 1px solid rgba(255,255,255,0.05); }
+    .pack-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+    @media(max-width:800px){ .pack-inner { grid-template-columns: 1fr; gap: 32px; } }
+    .pack-inner.reverse { direction: rtl; }
+    .pack-inner.reverse > * { direction: ltr; }
+    .pack-label { font-family:var(--font-display); font-size:0.75rem; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:var(--yellow); margin-bottom:8px; }
+    .pack-title { font-family:var(--font-display); font-size:clamp(2rem,4vw,3rem); font-weight:900; text-transform:uppercase; line-height:1; margin-bottom:16px; }
+    .pack-title span { color:var(--yellow); }
+    .pack-tagline { font-size:0.95rem; color:var(--grey); line-height:1.65; margin-bottom:24px; }
+    .pack-includes { list-style:none; margin-bottom:28px; display:flex; flex-direction:column; gap:8px; }
+    .pack-includes li { display:flex; align-items:flex-start; gap:10px; font-size:0.88rem; color:var(--light-grey); }
+    .pack-includes li::before { content:'✓'; color:var(--yellow); font-weight:700; flex-shrink:0; }
+    .pack-price-block { background:var(--dark2); padding:24px 28px; border-left:4px solid var(--yellow); }
+    .pack-price-from { font-size:0.78rem; font-family:var(--font-display); font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--grey); margin-bottom:4px; }
+    .pack-price-num { font-family:var(--font-display); font-size:2.8rem; font-weight:900; color:var(--yellow); line-height:1; }
+    .pack-price-note { font-size:0.78rem; color:var(--grey); margin-top:6px; line-height:1.5; }
+    .pack-cta-row { display:flex; gap:12px; margin-top:20px; flex-wrap:wrap; }
+    .pack-visual { background:var(--dark2); padding:36px; display:flex; flex-direction:column; gap:0; }
+    .pack-visual-title { font-family:var(--font-display); font-size:0.75rem; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--grey); margin-bottom:16px; }
+    .pack-formula { padding:16px 0; border-bottom:1px solid rgba(255,255,255,0.05); }
+    .pack-formula:last-child { border:none; }
+    .pack-formula-name { font-family:var(--font-display); font-size:1rem; font-weight:700; text-transform:uppercase; color:var(--white); margin-bottom:4px; }
+    .pack-formula-desc { font-size:0.8rem; color:var(--grey); margin-bottom:6px; }
+    .pack-formula-price { font-family:var(--font-display); font-size:1.1rem; font-weight:900; color:var(--yellow); }
+    .pack-anchor { display:block; height:80px; margin-top:-80px; }
+    .packs-section:nth-child(odd) { background:var(--black); }
+    .packs-section:nth-child(even) { background:var(--dark2); }
+    .combinaisons-section { padding:100px 0; background:var(--dark); }
+    .combi-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; margin-top:50px; }
+    @media(max-width:900px){ .combi-grid { grid-template-columns:1fr 1fr; } }
+    @media(max-width:500px){ .combi-grid { grid-template-columns:1fr; } }
+    .combi-card { background:var(--dark2); padding:28px; border-left:3px solid transparent; transition:border-color 0.3s; }
+    .combi-card:hover { border-left-color:var(--yellow); }
+    .combi-who { font-size:0.75rem; font-family:var(--font-display); letter-spacing:2px; text-transform:uppercase; color:var(--grey); margin-bottom:8px; }
+    .combi-title { font-family:var(--font-display); font-size:1.2rem; font-weight:900; text-transform:uppercase; color:var(--white); margin-bottom:10px; }
+    .combi-packs { display:flex; flex-wrap:wrap; gap:5px; margin-bottom:14px; }
+    .combi-pack { background:rgba(245,197,24,0.08); border:1px solid rgba(245,197,24,0.2); color:var(--yellow); font-size:0.7rem; font-family:var(--font-display); font-weight:700; padding:3px 8px; }
+    .combi-price { font-family:var(--font-display); font-size:1.3rem; font-weight:900; color:var(--yellow); }
+    .combi-desc { font-size:0.82rem; color:var(--grey); line-height:1.55; margin-top:8px; }
+  
+    .installs-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; margin-top:50px; }
+    @media(max-width:900px){ .installs-grid { grid-template-columns:1fr 1fr; } }
+    @media(max-width:500px){ .installs-grid { grid-template-columns:1fr; } }
+    .install-card { background:var(--dark2); padding:28px; border-bottom:3px solid transparent; transition:all 0.3s; }
+    .install-card:hover { border-bottom-color:#25D366; }
+    .install-card.popular { border-bottom-color:var(--yellow); }
+    .install-num { font-family:var(--font-display); font-size:0.7rem; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:#25D366; margin-bottom:8px; }
+    .install-icon { font-size:1.8rem; margin-bottom:10px; display:block; }
+    .install-name { font-family:var(--font-display); font-size:1.2rem; font-weight:900; text-transform:uppercase; line-height:1.1; margin-bottom:6px; }
+    .install-profile { font-size:0.8rem; color:var(--grey); margin-bottom:14px; }
+    .install-marques { display:flex; flex-wrap:wrap; gap:5px; margin-bottom:14px; }
+    .install-marque { background:rgba(37,211,102,0.07); border:1px solid rgba(37,211,102,0.15); color:#25D366; font-size:0.68rem; font-family:var(--font-display); font-weight:700; padding:3px 8px; }
+    .install-items { list-style:none; margin-bottom:16px; }
+    .install-items li { font-size:0.8rem; color:var(--grey); padding:4px 0; padding-left:14px; position:relative; border-bottom:1px solid rgba(255,255,255,0.04); }
+    .install-items li::before { content:'✓'; position:absolute; left:0; color:#25D366; font-weight:700; }
+    .install-price { font-family:var(--font-display); font-size:1.8rem; font-weight:900; color:var(--yellow); margin-bottom:4px; }
+    .install-price-note { font-size:0.72rem; color:var(--grey); margin-bottom:12px; }
+    .install-cta { display:block; width:100%; padding:10px; background:rgba(37,211,102,0.08); border:1px solid rgba(37,211,102,0.2); color:#25D366; font-family:var(--font-display); font-weight:700; font-size:0.82rem; letter-spacing:1px; text-transform:uppercase; cursor:pointer; transition:all 0.2s; text-align:center; }
+    .install-cta:hover { background:#25D366; color:var(--black); }
+    .marques-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; margin-top:40px; }
+    @media(max-width:800px){ .marques-grid { grid-template-columns:1fr 1fr; } }
+    @media(max-width:480px){ .marques-grid { grid-template-columns:1fr; } }
+    .marque-card { background:var(--dark2); padding:24px; border-left:3px solid transparent; transition:all 0.3s; }
+    .marque-card:hover { border-left-color:var(--yellow); }
+    .marque-logo { font-family:var(--font-display); font-size:1rem; font-weight:900; background:rgba(245,197,24,0.08); border:1px solid rgba(245,197,24,0.2); color:var(--yellow); padding:5px 10px; display:inline-block; margin-bottom:10px; }
+    .marque-usage { font-family:var(--font-display); font-size:0.75rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:#25D366; margin-bottom:8px; }
+    .marque-desc { font-size:0.82rem; color:var(--grey); line-height:1.55; }
+    .avantages-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; margin-top:40px; }
+    @media(max-width:850px){ .avantages-grid { grid-template-columns:1fr 1fr; } }
+    @media(max-width:500px){ .avantages-grid { grid-template-columns:1fr; } }
+    .avantage-card { background:var(--dark2); padding:28px; border-top:3px solid transparent; transition:border-color 0.3s; }
+    .avantage-card:hover { border-top-color:var(--yellow); }
+    .avantage-kpi { font-family:var(--font-display); font-size:3rem; font-weight:900; color:var(--yellow); line-height:1; margin-bottom:6px; }
+    .avantage-label { font-family:var(--font-display); font-size:0.9rem; font-weight:900; text-transform:uppercase; color:var(--white); margin-bottom:8px; }
+    .avantage-desc { font-size:0.82rem; color:var(--grey); line-height:1.6; }
+    .faq-grid { display:grid; grid-template-columns:1fr 1fr; gap:2px; margin-top:40px; }
+    @media(max-width:700px){ .faq-grid { grid-template-columns:1fr; } }
+    .faq-item { background:var(--dark2); border-left:3px solid transparent; overflow:hidden; transition:border-color 0.3s; }
+    .faq-item.open { border-left-color:var(--yellow); }
+    .faq-question { width:100%; background:none; border:none; padding:20px 22px; text-align:left; cursor:pointer; display:flex; justify-content:space-between; align-items:flex-start; gap:12px; }
+    .faq-question-text { font-family:var(--font-display); font-size:0.95rem; font-weight:700; text-transform:uppercase; color:var(--white); line-height:1.2; }
+    .faq-chevron { color:var(--yellow); font-size:1.1rem; flex-shrink:0; transition:transform 0.3s; }
+    .faq-item.open .faq-chevron { transform:rotate(45deg); }
+    .faq-answer { padding:0 22px; max-height:0; overflow:hidden; transition:max-height 0.4s ease, padding 0.3s; }
+    .faq-item.open .faq-answer { max-height:250px; padding-bottom:20px; }
+    .faq-answer p { font-size:0.86rem; color:var(--grey); line-height:1.7; }
+    .faq-answer strong { color:var(--white); }
+    .section-domo { padding:80px 0; }
+    .section-domo + .section-domo { border-top:1px solid rgba(255,255,255,0.05); }
+    .section-domo:nth-child(odd) { background:var(--black); }
+    .section-domo:nth-child(even) { background:var(--dark2); }
+  
+    .about-section { padding:80px 0; }
+    .about-section:nth-child(odd) { background:var(--black); }
+    .about-section:nth-child(even) { background:var(--dark2); }
+    .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
+    @media(max-width:800px){ .about-grid { grid-template-columns:1fr; gap:32px; } }
+    .about-grid.reverse { direction:rtl; } .about-grid.reverse > * { direction:ltr; }
+    .about-text p { font-size:0.95rem; color:var(--grey); line-height:1.75; margin-bottom:16px; }
+    .about-text p strong { color:var(--white); }
+    .values-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:2px; margin-top:40px; }
+    @media(max-width:500px){ .values-grid { grid-template-columns:1fr; } }
+    .value-card { background:var(--dark3); padding:24px; border-top:3px solid transparent; transition:border-color 0.3s; }
+    .value-card:hover { border-top-color:var(--yellow); }
+    .value-icon { font-size:1.8rem; margin-bottom:10px; display:block; }
+    .value-title { font-family:var(--font-display); font-size:1rem; font-weight:900; text-transform:uppercase; color:var(--white); margin-bottom:6px; }
+    .value-desc { font-size:0.82rem; color:var(--grey); line-height:1.6; }
+    .stats-row { display:flex; gap:2px; flex-wrap:wrap; margin-top:40px; }
+    .stat-item { background:var(--dark3); padding:24px 28px; flex:1; min-width:140px; }
+    .stat-num { font-family:var(--font-display); font-size:2.5rem; font-weight:900; color:var(--yellow); line-height:1; }
+    .stat-label { font-size:0.78rem; color:var(--grey); margin-top:4px; font-family:var(--font-display); font-weight:600; letter-spacing:1px; text-transform:uppercase; }
+    .zone-cities { display:flex; flex-wrap:wrap; gap:8px; margin-top:20px; }
+    .zone-tag { background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); color:var(--light-grey); font-size:0.8rem; font-family:var(--font-display); font-weight:600; padding:5px 12px; transition:all 0.2s; }
+    .zone-tag:hover { border-color:rgba(245,197,24,0.3); color:var(--yellow); }
+    .zone-tag.hl { background:rgba(245,197,24,0.08); border-color:rgba(245,197,24,0.25); color:var(--yellow); }
+    .zone-infos { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:24px; }
+    @media(max-width:500px){ .zone-infos { grid-template-columns:1fr; } }
+    .zone-info-box { background:var(--dark3); padding:18px; }
+    .zone-info-box h4 { font-family:var(--font-display); font-size:0.9rem; font-weight:900; text-transform:uppercase; color:var(--yellow); margin-bottom:6px; }
+    .zone-info-box p { font-size:0.82rem; color:var(--grey); line-height:1.55; }
+    .zone-info-box strong { color:var(--white); }
+  
+    .contact-hero{padding:80px 0 70px;background:var(--dark);position:relative;overflow:hidden}
+    .contact-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 30% 50%,rgba(245,197,24,0.07) 0%,transparent 65%)}
+    .contact-hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+    @media(max-width:900px){.contact-hero-inner{grid-template-columns:1fr;gap:40px}}
+    .contact-hero h1{font-family:var(--font-display);font-size:clamp(3rem,6vw,5rem);font-weight:900;text-transform:uppercase;line-height:0.95;letter-spacing:-1px}
+    .contact-hero h1 span{color:var(--yellow)}
+    .contact-hero-sub{font-size:1.05rem;color:var(--grey);line-height:1.7;margin-top:18px;max-width:440px}
+    .contact-promise{margin-top:32px;display:flex;flex-direction:column;gap:12px}
+    .contact-promise-item{display:flex;align-items:center;gap:12px}
+    .cp-icon{width:38px;height:38px;background:rgba(245,197,24,0.1);border:1px solid rgba(245,197,24,0.2);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+    .cp-text{font-size:0.92rem;color:var(--light-grey)}
+    .cp-text strong{color:var(--white)}
+    .quick-contact{display:flex;flex-direction:column;gap:14px}
+    .qc-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.06);padding:22px 24px;display:flex;align-items:center;gap:18px;text-decoration:none;transition:all 0.2s}
+    .qc-card:hover{border-color:var(--yellow);transform:translateX(4px)}
+    .qc-icon{width:50px;height:50px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
+    .qc-card.wa .qc-icon{background:rgba(37,211,102,0.12)}
+    .qc-card.phone .qc-icon{background:rgba(245,197,24,0.1)}
+    .qc-card.mail .qc-icon{background:rgba(255,255,255,0.05)}
+    .qc-text{flex:1}
+    .qc-label{font-size:0.72rem;font-family:var(--font-display);font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--grey);margin-bottom:4px}
+    .qc-value{font-family:var(--font-display);font-size:1.3rem;font-weight:900;color:var(--white)}
+    .qc-card.wa .qc-value{color:var(--green)}
+    .qc-card.phone .qc-value{color:var(--yellow)}
+    .qc-badge{font-size:0.7rem;font-family:var(--font-display);font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 8px}
+    .qc-card.wa .qc-badge{background:rgba(37,211,102,0.15);color:var(--green)}
+    .qc-card.phone .qc-badge{background:rgba(245,197,24,0.15);color:var(--yellow)}
+    .qc-arrow{font-size:1.2rem;color:var(--grey);transition:color 0.2s}
+    .qc-card:hover .qc-arrow{color:var(--yellow)}
+    .form-section{padding:100px 0;background:var(--black)}
+    .form-layout{display:grid;grid-template-columns:1fr 1.4fr;gap:80px;align-items:start}
+    @media(max-width:900px){.form-layout{grid-template-columns:1fr;gap:50px}}
+    .form-sidebar-title{font-family:var(--font-display);font-size:clamp(1.8rem,3vw,2.6rem);font-weight:900;text-transform:uppercase;line-height:1.05;margin-bottom:20px}
+    .form-sidebar-title span{color:var(--yellow)}
+    .form-sidebar-sub{font-size:0.9rem;color:var(--grey);line-height:1.65;margin-bottom:32px}
+    .form-steps{display:flex;flex-direction:column;gap:0}
+    .form-step{display:flex;gap:16px;padding-bottom:28px;position:relative}
+    .form-step::after{content:'';position:absolute;left:19px;top:38px;bottom:0;width:1px;background:rgba(255,255,255,0.07)}
+    .form-step:last-child::after{display:none}
+    .fs-num{width:38px;height:38px;background:var(--dark3);border:1px solid rgba(245,197,24,0.25);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:0.85rem;font-weight:900;color:var(--yellow);flex-shrink:0;position:relative;z-index:1}
+    .fs-body h4{font-family:var(--font-display);font-weight:700;font-size:1rem;text-transform:uppercase;letter-spacing:0.5px;color:var(--white);margin-bottom:4px}
+    .fs-body p{font-size:0.82rem;color:var(--grey);line-height:1.5}
+    .rt-box{margin-top:32px;background:rgba(245,197,24,0.06);border:1px solid rgba(245,197,24,0.15);padding:18px 20px;display:flex;align-items:center;gap:14px}
+    .rt-icon{font-size:1.5rem}
+    .rt-text strong{display:block;font-family:var(--font-display);font-size:0.9rem;font-weight:700;text-transform:uppercase;color:var(--yellow);margin-bottom:2px}
+    .rt-text span{font-size:0.8rem;color:var(--grey)}
+    .contact-form{background:var(--dark2);padding:40px}
+    @media(max-width:600px){.contact-form{padding:28px 20px}}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    @media(max-width:600px){.form-row{grid-template-columns:1fr}}
+    .form-group{margin-bottom:18px}
+    .form-group label{display:block;font-family:var(--font-display);font-size:0.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--grey);margin-bottom:8px}
+    .form-group label .req{color:var(--yellow);margin-left:2px}
+    .form-group input,.form-group select,.form-group textarea{width:100%;background:var(--dark3);border:1px solid rgba(255,255,255,0.08);color:var(--white);font-family:var(--font-body);font-size:0.95rem;padding:14px 16px;transition:border-color 0.2s;outline:none}
+    .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--yellow)}
+    .form-group input::placeholder,.form-group textarea::placeholder{color:rgba(255,255,255,0.2)}
+    .form-group select{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23f5c518' d='M6 8L0 0h12z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:calc(100% - 16px) 50%;padding-right:40px}
+    .form-group select option{background:var(--dark3)}
+    .form-group textarea{resize:vertical;min-height:130px}
+    .form-legal{font-size:0.75rem;color:var(--grey);line-height:1.5;margin-bottom:20px}
+    .form-submit{width:100%;background:var(--yellow);color:var(--black);font-family:var(--font-display);font-weight:900;font-size:1.05rem;letter-spacing:1px;text-transform:uppercase;padding:18px;cursor:pointer;border:none;transition:all 0.2s;display:flex;align-items:center;justify-content:center;gap:10px}
+    .form-submit:hover{background:var(--white);transform:translateY(-2px);box-shadow:0 10px 40px rgba(245,197,24,0.25)}
+    .form-wa-alt{margin-top:14px;text-align:center;font-size:0.82rem;color:var(--grey)}
+    .form-wa-alt button{background:none;border:none;color:var(--green);font-weight:700;font-family:var(--font-display);font-size:0.9rem;cursor:pointer;text-transform:uppercase;letter-spacing:1px}
+    .form-wa-alt button:hover{text-decoration:underline}
+    .zone-section{padding:80px 0;background:var(--dark)}
+    .zone-layout{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;margin-top:50px}
+    @media(max-width:800px){.zone-layout{grid-template-columns:1fr;gap:32px}}
+    .zone-map-box{background:var(--dark2);border:1px solid rgba(255,255,255,0.06);padding:40px;min-height:280px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center}
+    .zone-map-icon{font-size:3rem}
+    .zone-map-title{font-family:var(--font-display);font-size:1.2rem;font-weight:900;text-transform:uppercase;color:var(--white)}
+    .zone-map-sub{font-size:0.85rem;color:var(--grey)}
+    .zone-badges{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+    .zone-badge{background:rgba(245,197,24,0.1);border:1px solid rgba(245,197,24,0.2);color:var(--yellow);font-size:0.75rem;font-family:var(--font-display);font-weight:700;padding:5px 12px}
+    .zone-cities{display:flex;flex-direction:column;gap:0}
+    .zone-dept{border-bottom:1px solid rgba(255,255,255,0.06)}
+    .zdept-header{display:flex;align-items:center;gap:12px;padding:16px 0}
+    .zdept-num{background:var(--yellow);color:var(--black);font-family:var(--font-display);font-weight:900;font-size:0.85rem;padding:4px 10px}
+    .zdept-name{font-family:var(--font-display);font-size:1rem;font-weight:700;text-transform:uppercase;color:var(--white)}
+    .zdept-cities{display:flex;flex-wrap:wrap;gap:6px;padding-bottom:16px}
+    .zcity{background:var(--dark3);color:var(--grey);font-size:0.78rem;font-family:var(--font-display);font-weight:600;letter-spacing:0.5px;padding:4px 10px}
+    .zone-note{margin-top:20px;background:rgba(245,197,24,0.06);border-left:3px solid var(--yellow);padding:14px 18px}
+    .zone-note p{font-size:0.85rem;color:var(--grey);line-height:1.55}
+    .zone-note strong{color:var(--yellow)}
+    .faq-section{padding:80px 0;background:var(--black)}
+    .faq-list{max-width:760px;margin:50px auto 0;display:flex;flex-direction:column;gap:2px}
+    .faq-item{background:var(--dark2);overflow:hidden}
+    .faq-question{width:100%;background:none;border:none;color:var(--white);display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 24px;cursor:pointer;font-family:var(--font-display);font-size:1.05rem;font-weight:700;text-transform:uppercase;letter-spacing:0.3px;text-align:left;transition:color 0.2s}
+    .faq-question:hover{color:var(--yellow)}
+    .faq-chevron{font-size:1.2rem;transition:transform 0.3s;flex-shrink:0;color:var(--yellow)}
+    .faq-item.open .faq-chevron{transform:rotate(180deg)}
+    .faq-answer{max-height:0;overflow:hidden;transition:max-height 0.4s ease}
+    .faq-item.open .faq-answer{max-height:300px}
+    .faq-answer-inner{padding:16px 24px 22px;font-size:0.9rem;color:var(--grey);line-height:1.7;border-top:1px solid rgba(255,255,255,0.05)}
+  
+</style>
+</head>
+<body>
+<div class="topbar">&#9889; Sp&eacute;cialiste Habitat Connect&eacute; &mdash; Nord-Pas-de-Calais &mdash; <a href="tel:0695537946">06 95 53 79 46</a></div>
+<nav role="navigation"><div class="container"><div class="nav-inner">
+<a href="#" data-page="accueil" class="logo"><svg class="logo-bolt" viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14H12L11 22L20 10H12L13 2Z" fill="#f5c518" stroke="#f5c518" stroke-width="1" stroke-linejoin="round"/></svg> INNOV<span>OHM</span></a>
+<ul class="nav-links">
+<li><a href="#" data-page="accueil" id="nav-accueil" class="active">Accueil</a></li>
+<li><a href="#" data-page="services" id="nav-services">Services</a></li>
+<li><a href="#" data-page="domotique" id="nav-domotique">Domotique</a></li>
+<li><a href="#" data-page="apropos" id="nav-apropos">A Propos</a></li>
+<li><a href="#" data-page="contact" id="nav-contact">Contact</a></li>
+</ul>
+<div class="nav-cta">
+<a href="tel:0695537946" class="nav-phone">&#128222; 06 95 53 79 46</a>
+<a href="#" data-page="contact" class="btn btn-primary" style="padding:10px 20px;font-size:.85rem;">Devis</a>
+</div>
+<button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</div></div>
+<div class="mobile-menu" id="mobile-menu">
+<a href="#" data-page="accueil" data-close="1">Accueil</a>
+<a href="#" data-page="services" data-close="1">Services</a>
+<a href="#" data-page="domotique" data-close="1">Domotique</a>
+<a href="#" data-page="apropos" data-close="1">A Propos</a>
+<a href="#" data-page="contact" data-close="1">Contact</a>
+<a href="tel:0695537946" class="m-phone">&#128222; 06 95 53 79 46</a>
+</div></nav>
+<div id="page-accueil" class="page active">
+<section class="hero">
+  <div class="hero-bg"></div><div class="hero-grid"></div>
+  <div class="container hero-content">
+    <div class="hero-eyebrow">Habitat Connect&eacute; &amp; Solutions &Eacute;lectriques</div>
+    <h1 class="hero-title">
+      <span class="l1">Votre Maison.</span>
+      <span class="l2">Transform&eacute;e.</span>
+      <span class="l3">Connect&eacute;e &middot; S&eacute;curis&eacute;e &middot; &Eacute;clair&eacute;e &middot; Audio</span>
+    </h1>
+    <p class="hero-desc">Innov OHM con&ccedil;oit et installe des solutions sur mesure pour transformer votre habitat. Du d&eacute;pannage urgent &agrave; la maison intelligente compl&egrave;te &mdash; on s&rsquo;occupe de tout.</p>
+    <div class="hero-actions">
+      <a href="#" data-page="contact" class="btn btn-primary">&#128203; Demander un Devis</a>
+      <a href="tel:0695537946" class="btn btn-outline">&#128222; Appeler Maintenant</a>
+    </div>
+    <div class="hero-trust">
+      <div class="trust-item"><div class="trust-icon">&#9889;</div><span>Intervention rapide</span></div>
+      <div class="trust-item"><div class="trust-icon">&#128274;</div><span>Travail garanti</span></div>
+      <div class="trust-item"><div class="trust-icon">&#128203;</div><span>Devis sur mesure</span></div>
+      <div class="trust-item"><div class="trust-icon">&#128205;</div><span>Nord-Pas-de-Calais</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-services" id="services">
+  <div class="container">
+    <div class="section-tag">Ce qu'on fait</div>
+    <h2 class="section-title">Nos <span>Services</span></h2>
+    <p class="section-sub">Du d&eacute;pannage en urgence &agrave; la villa connect&eacute;e &mdash; chaque projet trait&eacute; avec le m&ecirc;me soin.</p>
+    <div class="services-grid">
+      <a href="#" data-page="services" data-anchor="urgence" class="service-card fade-in"><span class="service-icon">&#128680;</span><div class="service-name">Urgence &amp; D&eacute;pannage</div><div class="service-desc">Panne, disjoncteur, prise morte &mdash; intervention rapide, diagnostic sur place.</div><div class="service-price">A partir de 90 &euro;<sup class="ps">*</sup></div></a>
+      <a href="#" data-page="services" data-anchor="eclairage" class="service-card fade-in"><span class="service-icon">&#128161;</span><div class="service-name">Eclairage Moderne</div><div class="service-desc">Spots LED, rubans, variateurs &mdash; mettez en valeur chaque pi&egrave;ce.</div><div class="service-price">A partir de 350 &euro;<sup class="ps">*</sup></div></a>
+      <a href="#" data-page="services" data-anchor="renovation" class="service-card fade-in"><span class="service-icon">&#128268;</span><div class="service-name">R&eacute;novation &Eacute;lectrique</div><div class="service-desc">Tableau, c&acirc;blage, mise aux normes NF C 15-100.</div><div class="service-price">A partir de 800 &euro;<sup class="ps">*</sup></div></a>
+      <a href="#" data-page="domotique" class="service-card fade-in"><span class="service-icon">&#128241;</span><div class="service-name">Maison Connect&eacute;e</div><div class="service-desc">Domotique Matter, volets auto, thermostat intelligent &mdash; pilotez tout depuis votre t&eacute;l&eacute;phone.</div><div class="service-price">A partir de 600 &euro;<sup class="ps">*</sup></div></a>
+      <a href="#" data-page="services" data-anchor="securite" class="service-card fade-in"><span class="service-icon">&#128274;</span><div class="service-name">S&eacute;curit&eacute; Maison</div><div class="service-desc">Alarme, cam&eacute;ras HD, d&eacute;tecteurs &mdash; alertes en temps r&eacute;el sur smartphone.</div><div class="service-price">A partir de 500 &euro;<sup class="ps">*</sup></div></a>
+      <a href="#" data-page="services" data-anchor="audio" class="service-card fade-in"><span class="service-icon">&#127925;</span><div class="service-name">Audio &amp; Home Cin&eacute;ma</div><div class="service-desc">Enceintes encastr&eacute;es, multiroom, home cin&eacute;ma cl&eacute; en main.</div><div class="service-price">A partir de 1 200 &euro;<sup class="ps">*</sup></div></a>
+    </div>
+    <div style="text-align:center;margin-top:40px;"><a href="#" data-page="services" class="btn btn-outline">Voir tous les services &amp; tarifs &rarr;</a></div>
+  </div>
+</section>
+
+<section class="section-process">
+  <div class="container">
+    <div class="section-tag">Notre m&eacute;thode</div>
+    <h2 class="section-title">Comment Ca <span>Se Passe ?</span></h2>
+    <p class="section-sub">4 &eacute;tapes, z&eacute;ro surprise. Du premier contact jusqu&rsquo;&agrave; la fin du chantier.</p>
+    <div class="process-grid">
+      <div class="process-step fade-in"><div class="process-num">01</div><span class="process-icon">&#128222;</span><div class="process-title"><span>Premier</span> Contact</div><p class="process-desc">On &eacute;change sur votre projet &mdash; vous d&eacute;crivez, on dit ce qu&rsquo;on peut faire et dans quel d&eacute;lai.</p><span class="process-note">&#10003; Z&eacute;ro engagement</span></div>
+      <div class="process-step fade-in"><div class="process-num">02</div><span class="process-icon">&#128269;</span><div class="process-title">Visite <span>Diagnostic</span></div><p class="process-desc">D&eacute;placement sur place pour analyser l&rsquo;installation. Indispensable pour un devis juste.</p><span class="process-note" style="background:rgba(245,197,24,0.06);border-color:rgba(245,197,24,0.2);color:var(--yellow)">D&eacute;placement &agrave; partir de 90 &euro;</span></div>
+      <div class="process-step fade-in"><div class="process-num">03</div><span class="process-icon">&#128203;</span><div class="process-title">Devis <span>Fixe</span></div><p class="process-desc">Devis d&eacute;taill&eacute; ligne par ligne. Prix fixe et garanti &mdash; aucune surprise &agrave; la fin.</p><span class="process-note">&#10003; Prix garanti</span></div>
+      <div class="process-step fade-in"><div class="process-num">04</div><span class="process-icon">&#9889;</span><div class="process-title">Chantier <span>Propre</span></div><p class="process-desc">Intervention au cr&eacute;neau convenu. Chantier propre, formation &agrave; la livraison, suivi 1 mois apr&egrave;s.</p><span class="process-note">&#10003; SAV inclus</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-zone-mini">
+  <div class="container">
+    <div class="zone-mini-inner">
+      <div>
+        <div class="section-tag">Secteur</div>
+        <h2 class="section-title">Zone d&rsquo;<span>Intervention</span></h2>
+        <p class="section-sub">Bas&eacute; &agrave; Houdain, j&rsquo;interviens dans tout le Nord-Pas-de-Calais.</p>
+        <div style="margin-top:24px;"><a href="#" data-page="apropos" class="btn btn-primary">En savoir plus &rarr;</a></div>
+      </div>
+      <div>
+        <div class="zone-cities-wrap">
+          <span class="zone-city hl">Houdain</span><span class="zone-city hl">B&eacute;thune</span><span class="zone-city hl">Bruay-la-Buissi&egrave;re</span>
+          <span class="zone-city">Lens</span><span class="zone-city">Li&eacute;vin</span><span class="zone-city">Noeux-les-Mines</span>
+          <span class="zone-city">Douai</span><span class="zone-city">Lille</span><span class="zone-city">Arras</span>
+          <span class="zone-city">Valenciennes</span><span class="zone-city">Barlin</span>
+          <span class="zone-city" style="color:var(--grey)">+ toute la r&eacute;gion</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-cta-final">
+  <div class="container">
+    <h2 class="cta-title">Pr&ecirc;t &agrave; transformer<br>votre maison ?</h2>
+    <p class="cta-sub">Contactez-nous pour discuter de votre projet &mdash; r&eacute;ponse rapide garantie.</p>
+    <div class="cta-btns">
+      <a href="#" data-page="contact" class="btn btn-dark">&#128203; Demander un Devis</a>
+      <a href="tel:0695537946" class="btn btn-dark">&#128222; 06 95 53 79 46</a>
+      <a href="https://wa.me/33695537946" target="_blank" class="btn btn-wad">&#128172; WhatsApp</a>
+    </div>
+  </div>
+</section>
+</div>
+<div id="page-services" class="page">
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="container page-header-content">
+    
+    <h1>Nos <span>Services</span></h1>
+    <p>Du dépannage d'urgence à la villa connectée — chaque solution est adaptée à votre situation et votre budget.</p>
+  </div>
+</div>
+
+<!-- PACK 1 — URGENCE -->
+<div class="pack-anchor" id="urgence"></div>
+<section class="packs-section">
+  <div class="container">
+    <div class="pack-inner">
+      <div class="fade-in">
+        <div class="pack-label">Pack 1</div>
+        <h2 class="pack-title">Urgence &amp; <span>Dépannage</span></h2>
+        <p class="pack-tagline">Panne totale, disjoncteur déclenché, prise morte, lumière défaillante — on intervient vite et on sécurise.</p>
+        <ul class="pack-includes">
+          <li>Diagnostic complet sur place</li>
+          <li>Réparation du problème identifié</li>
+          <li>Sécurisation immédiate</li>
+          <li>Rapport + conseils écrits</li>
+        </ul>
+        <div class="pack-price-block">
+          <div class="pack-price-from">À partir de</div>
+          <div class="pack-price-num">90 €<sup class="price-asterisk">*</sup></div>
+          <div class="pack-price-note">Prix selon diagnostic. Déplacement communiqué avant intervention.</div>
+        </div>
+        <div class="pack-cta-row">
+          <a href="tel:0695537946" class="btn btn-primary">📞 Appeler</a>
+          <button data-wa="Urgence & Dépannage" class="btn btn-green" style="border:none;cursor:pointer;">💬 WhatsApp</button>
+        </div>
+      </div>
+      <div class="pack-visual fade-in">
+        <div class="pack-visual-title">Les formules</div>
+        <div class="pack-formula"><div class="pack-formula-name">Diagnostic</div><div class="pack-formula-desc">Déplacement + 1h diagnostic</div><div class="pack-formula-price">À partir de 90 €<sup class="price-asterisk">*</sup></div></div>
+        <div class="pack-formula"><div class="pack-formula-name">Dépannage Simple</div><div class="pack-formula-desc">Diagnostic + réparation rapide</div><div class="pack-formula-price">À partir de 180 €<sup class="price-asterisk">*</sup></div></div>
+        <div class="pack-formula"><div class="pack-formula-name">Dépannage Complet</div><div class="pack-formula-desc">Diagnostic + réparation + sécurisation</div><div class="pack-formula-price">À partir de 280 €<sup class="price-asterisk">*</sup></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACK 2 — ÉCLAIRAGE -->
+<div class="pack-anchor" id="eclairage"></div>
+<section class="packs-section">
+  <div class="container">
+    <div class="pack-inner reverse">
+      <div class="fade-in">
+        <div class="pack-label">Pack 2</div>
+        <h2 class="pack-title">Éclairage <span>Moderne</span></h2>
+        <p class="pack-tagline">Spots LED encastrés, bandeaux indirects, variateurs design — transformez l'ambiance de chaque pièce.</p>
+        <ul class="pack-includes">
+          <li>Spots LED encastrés fournis & posés</li>
+          <li>Bandeaux LED indirects</li>
+          <li>Variateurs design</li>
+          <li>Mise en valeur architecturale</li>
+        </ul>
+        <div class="pack-price-block">
+          <div class="pack-price-from">À partir de</div>
+          <div class="pack-price-num">350 €<sup class="price-asterisk">*</sup></div>
+          <div class="pack-price-note">Matériel fourni inclus. Prix selon surface et nombre de points lumineux.</div>
+        </div>
+        <div class="pack-cta-row">
+          <a href="#" data-page="contact" class="btn btn-primary">Demander un Devis</a>
+          <button data-wa="Éclairage Moderne" class="btn btn-green" style="border:none;cursor:pointer;">💬 WhatsApp</button>
+        </div>
+      </div>
+      <div class="pack-visual fade-in">
+        <div class="pack-visual-title">Les formules</div>
+        <div class="pack-formula"><div class="pack-formula-name">Mini</div><div class="pack-formula-desc">1 pièce — 4 à 6 spots LED posés</div><div class="pack-formula-price">À partir de 350 €<sup class="price-asterisk">*</sup></div></div>
+        <div class="pack-formula"><div class="pack-formula-name">Standard</div><div class="pack-formula-desc">2 à 3 pièces + variateurs</div><div class="pack-formula-price">À partir de 800 €<sup class="price-asterisk">*</sup></div></div>
+        <div class="pack-formula"><div class="pack-formula-name">Prestige</div><div class="pack-formula-desc">Maison complète + effets indirects</div><div class="pack-formula-price">À partir de 1 800 €<sup class="price-asterisk">*</sup></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACK 3 — RÉNOVATION -->
+<div class="pack-anchor" id="renovation"></div>
+<section class="packs-section">
+  <div class="container">
+    <div class="pack-inner">
+      <div class="fade-in">
+        <div class="pack-label">Pack 3</div>
+        <h2 class="pack-title">Rénovation <span>Électrique</span></h2>
+        <p class="pack-tagline">Maison ancienne, achat immobilier, non-conformité — remise aux normes NF C 15-100 complète.</p>
+        <ul class="pack-includes">
+          <li>Audit de l'installation existante</li>
+          <li>Remplacement tableau électrique</li>
+          <li>Nouvelles prises & câblage</li>
+          <li>Éclairage conforme</li>
+        </ul>
+        <div class="pack-price-block">
+          <div class="pack-price-from">À partir de</div>
+          <div class="pack-price-num">800 €<sup class="price-asterisk">*</sup></div>
+          <div class="pack-price-note">Prix selon état de l'installation et surface du logement.</div>
+        </div>
+        <div class="pack-cta-row">
+          <a href="#" data-page="contact" class="btn btn-primary">Demander un Devis</a>
+          <button data-wa="Rénovation Électrique" class="btn btn-green" style="border:none;cursor:pointer;">💬 WhatsApp</button>
+        </div>
+      </div>
+      <div class="pack-visual fade-in">
+        <div class="pack-visual-title">Les formules</div>
+        <div class="pack-formula"><div class="pack-formula-name">Tableau seul</div><div class="pack-formula-desc">Remplacement + mise en sécurité</div><div class="pack-formula-price">À partir de 800 €<sup class="price-asterisk">*</sup></div></div>
+        <div class="pack-formula"><div class="pack-formula-name">Partielle</div><div class="pack-formula-desc">Tableau + prises + éclairage 1 niveau</div><div class="pack-formula-price">À partir de 2 000 €<sup class="price-asterisk">*</sup></div></div>
+        <div class="pack-formula"><div class="pack-formula-name">Complète</div><div class="pack-formula-desc">Maison entière remise aux normes</div><div class="pack-formula-price">À partir de 4 000 €<sup class="price-asterisk">*</sup></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACK 4 — DOMOTIQUE -->
+<div class="pack-anchor" id="domotique"></div>
+<section class="packs-section">
+  <div class="container">
+    <div class="pack-inner reverse">
+      <div class="fade-in">
+        <div class="pack-label">Pack 4</div>
+        <h2 class="pack-title">Maison <span>Connectée</span></h2>
+        <p class="pack-tagline">Pilotez votre maison depuis votre smartphone — éclairage, volets, température, sécurité.</p>
+        <ul class="pack-includes">
+          <li>Éclairage connecté pilotable</li>
+          <li>Prises intelligentes programmables</li>
+          <li>Thermostat connecté</li>
+          <li>Configuration app smartphone + formation</li>
+        </ul>
+        <div class="pack-price-block">
+          <div class="pack-price-from">À partir de</div>
+          <div class="pack-price-num">600 €<sup class="price-asterisk">*</sup></div>
+          <div class="pack-price-note">Compatible Apple, Google, Alexa. Voir la page Domotique pour les détails.</div>
+        </div>
+        <div class="pack-cta-row">
+          <a href="#" data-page="domotique" class="btn btn-primary">Voir la Domotique</a>
+          <button data-wa="Maison Connectée" class="btn btn-green" style="border:none;cursor:pointer;">💬 WhatsApp</button>
+        </div>
+      </div>
+      <div class="pack-visual fade-in">
+        <div class="pack-visual-title">Les formules</div>
+        <div class="pack-formula"><div class="pack-formula-name">Starter</div><div class="pack-formula-desc">Prises + éclairage 1 pièce + app</div><div class="pack-formula-price">À partir de 600 €<sup class="price-asterisk">*</sup></div></div>
+        <div class="pack-formula"><div class="pack-formula-name">Smart Home</div><div class="pack-formula-desc">Multi-pièces + thermostat + app</div><div class="pack-formula-price">À partir de 1 500 €<sup class="price-asterisk">*</sup></div></div>
+        <div class="pack-formula"><div class="pack-formula-name">Domotique Full</div><div class="pack-formula-desc">Maison entière pilotée</div><div class="pack-formula-price">À partir de 3 000 €<sup class="price-asterisk">*</sup></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACK 5 — SÉCURITÉ -->
+<div class="pack-anchor" id="securite"></div>
+<section class="packs-section">
+  <div class="container">
+    <div class="pack-inner">
+      <div class="fade-in">
+        <div class="pack-label">Pack 5</div>
+        <h2 class="pack-title">Sécurité <span>Maison</span></h2>
+        <p class="pack-tagline">Alarme, caméras HD, détecteurs de mouvement — dormez tranquille et sachez tout en temps réel.</p>
+        <ul class="pack-includes">
+          <li>Centrale d'alarme professionnelle</li>
+          <li>Détecteurs mouvement & ouverture</li>
+          <li>Caméras HD intérieur/extérieur</li>
+          <li>Alertes + contrôle smartphone</li>
+        </ul>
+        <div class="pack-price-block">
+          <div class="pack-price-from">À partir de</div>
+          <div class="pack-price-num">500 €<sup class="price-asterisk">*</sup></div>
+          <div class="pack-price-note">Prix selon nombre de zones et équipements souhaités.</div>
+        </div>
+        <div class="pack-cta-row">
+          <a href="#" data-page="contact" class="btn btn-primary">Demander un Devis</a>
+          <button data-wa="Sécurité Maison" class="btn btn-green" style="border:none;cursor:pointer;">💬 WhatsApp</button>
+        </div>
+      </div>
+      <div class="pack-visual fade-in">
+        <div class="pack-visual-title">Les formules</div>
+        <div class="pack-formula"><div class="pack-formula-name">Essentiel</div><div class="pack-formula-desc">Alarme + 2 détecteurs</div><div class="pack-formula-price">À partir de 500 €<sup class="price-asterisk">*</sup></div></div>
+        <div class="pack-formula"><div class="pack-formula-name">Sérénité</div><div class="pack-formula-desc">Alarme + détecteurs + 2 caméras</div><div class="pack-formula-price">À partir de 1 000 €<sup class="price-asterisk">*</sup></div></div>
+        <div class="pack-formula"><div class="pack-formula-name">Forteresse</div><div class="pack-formula-desc">Système complet multi-zones</div><div class="pack-formula-price">À partir de 2 200 €<sup class="price-asterisk">*</sup></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACK 6 — EXTÉRIEUR -->
+<div class="pack-anchor" id="exterieur"></div>
+<section class="packs-section">
+  <div class="container">
+    <div class="pack-inner reverse">
+      <div class="fade-in">
+        <div class="pack-label">Pack 6</div>
+        <h2 class="pack-title">Extérieur <span>&amp; Jardin</span></h2>
+        <p class="pack-tagline">Éclairage décoratif, prises extérieures, portail automatique — profitez de votre extérieur en toute sécurité.</p>
+        <ul class="pack-includes">
+          <li>Éclairage extérieur décoratif IP65</li>
+          <li>Prises extérieures sécurisées</li>
+          <li>Spots sécurité & détection</li>
+          <li>Portail motorisé fourni & posé</li>
+        </ul>
+        <div class="pack-price-block">
+          <div class="pack-price-from">À partir de</div>
+          <div class="pack-price-num">300 €<sup class="price-asterisk">*</sup></div>
+          <div class="pack-price-note">Idéal printemps/été. Prix selon superficie et équipements.</div>
+        </div>
+        <div class="pack-cta-row">
+          <a href="#" data-page="contact" class="btn btn-primary">Demander un Devis</a>
+          <button data-wa="Extérieur & Jardin" class="btn btn-green" style="border:none;cursor:pointer;">💬 WhatsApp</button>
+        </div>
+      </div>
+      <div class="pack-visual fade-in">
+        <div class="pack-visual-title">Les formules</div>
+        <div class="pack-formula"><div class="pack-formula-name">Terrasse</div><div class="pack-formula-desc">3 spots ext. + 1 prise IP65</div><div class="pack-formula-price">À partir de 300 €<sup class="price-asterisk">*</sup></div></div>
+        <div class="pack-formula"><div class="pack-formula-name">Jardin & Accès</div><div class="pack-formula-desc">Éclairage complet + sécurité</div><div class="pack-formula-price">À partir de 700 €<sup class="price-asterisk">*</sup></div></div>
+        <div class="pack-formula"><div class="pack-formula-name">Premium Ext.</div><div class="pack-formula-desc">Éclairage + portail auto + prises</div><div class="pack-formula-price">À partir de 1 600 €<sup class="price-asterisk">*</sup></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACK 7 — AUDIO -->
+<div class="pack-anchor" id="audio"></div>
+<section class="packs-section">
+  <div class="container">
+    <div class="pack-inner">
+      <div class="fade-in">
+        <div class="pack-label">Pack 7</div>
+        <h2 class="pack-title">Audio &amp; <span>Home Cinéma</span></h2>
+        <p class="pack-tagline">Home cinéma clé en main, enceintes invisibles, musique partout — l'expérience premium chez vous.</p>
+        <ul class="pack-includes">
+          <li>Home cinéma clé en main</li>
+          <li>Enceintes encastrées invisibles</li>
+          <li>Système multiroom</li>
+          <li>Câblage HDMI/réseau intégré</li>
+          <li>Configuration et démo incluses</li>
+        </ul>
+        <div class="pack-price-block">
+          <div class="pack-price-from">À partir de</div>
+          <div class="pack-price-num">1 200 €<sup class="price-asterisk">*</sup></div>
+          <div class="pack-price-note">Niche premium, très peu de concurrence. Sur devis selon projet.</div>
+        </div>
+        <div class="pack-cta-row">
+          <a href="#" data-page="contact" class="btn btn-primary">Demander un Devis</a>
+          <button data-wa="Audio & Home Cinéma" class="btn btn-green" style="border:none;cursor:pointer;">💬 WhatsApp</button>
+        </div>
+      </div>
+      <div class="pack-visual fade-in">
+        <div class="pack-visual-title">Les formules</div>
+        <div class="pack-formula"><div class="pack-formula-name">Cinéma</div><div class="pack-formula-desc">Home cinéma 1 pièce (son + câblage)</div><div class="pack-formula-price">À partir de 1 200 €<sup class="price-asterisk">*</sup></div></div>
+        <div class="pack-formula"><div class="pack-formula-name">Multiroom</div><div class="pack-formula-desc">Enceintes 2–3 pièces + ampli</div><div class="pack-formula-price">À partir de 2 000 €<sup class="price-asterisk">*</sup></div></div>
+        <div class="pack-formula"><div class="pack-formula-name">Full Audio</div><div class="pack-formula-desc">Maison complète cinéma + multiroom</div><div class="pack-formula-price">À partir de 4 000 €<sup class="price-asterisk">*</sup></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACK 8 — ACHAT MAISON -->
+<div class="pack-anchor" id="achat"></div>
+<section class="packs-section">
+  <div class="container">
+    <div class="pack-inner reverse">
+      <div class="fade-in">
+        <div class="pack-label">Pack 8</div>
+        <h2 class="pack-title">Achat <span>Maison</span></h2>
+        <p class="pack-tagline">Vous venez d'acheter — sachez exactement dans quoi vous mettez les pieds avant les travaux.</p>
+        <ul class="pack-includes">
+          <li>Diagnostic électrique complet</li>
+          <li>Rapport écrit détaillé</li>
+          <li>Mise en sécurité immédiate si besoin</li>
+          <li>Plan de travaux chiffré + priorités</li>
+        </ul>
+        <div class="pack-price-block">
+          <div class="pack-price-from">À partir de</div>
+          <div class="pack-price-num">120 €<sup class="price-asterisk">*</sup></div>
+          <div class="pack-price-note">Chaque client devient un futur chantier. Diagnostic = porte d'entrée.</div>
+        </div>
+        <div class="pack-cta-row">
+          <a href="#" data-page="contact" class="btn btn-primary">Demander un Devis</a>
+          <button data-wa="Pack Achat Maison" class="btn btn-green" style="border:none;cursor:pointer;">💬 WhatsApp</button>
+        </div>
+      </div>
+      <div class="pack-visual fade-in">
+        <div class="pack-visual-title">Les formules</div>
+        <div class="pack-formula"><div class="pack-formula-name">Diagnostic</div><div class="pack-formula-desc">Rapport complet état électrique</div><div class="pack-formula-price">À partir de 120 €<sup class="price-asterisk">*</sup></div></div>
+        <div class="pack-formula"><div class="pack-formula-name">Sécurisation</div><div class="pack-formula-desc">Diagnostic + interventions urgentes</div><div class="pack-formula-price">À partir de 400 €<sup class="price-asterisk">*</sup></div></div>
+        <div class="pack-formula"><div class="pack-formula-name">Emménagement</div><div class="pack-formula-desc">Sécu + améliorations + plan travaux</div><div class="pack-formula-price">À partir de 900 €<sup class="price-asterisk">*</sup></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACK 9 — PREMIUM -->
+<div class="pack-anchor" id="premium"></div>
+<section class="packs-section" style="background:var(--dark)!important;">
+  <div class="container">
+    <div class="pack-inner">
+      <div class="fade-in">
+        <div class="pack-label">Pack 9 — Le plus complet</div>
+        <h2 class="pack-title">Pack <span>Premium</span></h2>
+        <p class="pack-tagline">Clients exigeants, budget sans limite — on s'occupe de tout. Électricité, éclairage, domotique, sécurité, audio.</p>
+        <ul class="pack-includes">
+          <li>Électricité complète remise à neuf</li>
+          <li>Éclairage design sur-mesure</li>
+          <li>Domotique intégrée complète</li>
+          <li>Sécurité (alarme + caméras)</li>
+          <li>Audio multiroom & home cinéma</li>
+        </ul>
+        <div class="pack-price-block" style="border-left-color:var(--yellow);">
+          <div class="pack-price-from">À partir de</div>
+          <div class="pack-price-num">4 500 €<sup class="price-asterisk">*</sup></div>
+          <div class="pack-price-note">Devis personnalisé après visite. La vitrine d'Innov OHM.</div>
+        </div>
+        <div class="pack-cta-row">
+          <a href="#" data-page="contact" class="btn btn-primary">Demander un Devis</a>
+          <button data-wa="Pack Premium INNOV OHM" class="btn btn-green" style="border:none;cursor:pointer;">💬 WhatsApp</button>
+        </div>
+      </div>
+      <div class="pack-visual fade-in" style="border:1px solid rgba(245,197,24,0.2);">
+        <div class="pack-visual-title">Les formules</div>
+        <div class="pack-formula"><div class="pack-formula-name">Signature</div><div class="pack-formula-desc">Électricité + éclairage design</div><div class="pack-formula-price">À partir de 4 500 €<sup class="price-asterisk">*</sup></div></div>
+        <div class="pack-formula"><div class="pack-formula-name">Excellence</div><div class="pack-formula-desc">Signature + domotique + sécurité</div><div class="pack-formula-price">À partir de 7 000 €<sup class="price-asterisk">*</sup></div></div>
+        <div class="pack-formula"><div class="pack-formula-name">Sur-Mesure</div><div class="pack-formula-desc">Tout inclus — devis personnalisé</div><div class="pack-formula-price" style="color:var(--white);">Sur devis</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMBINAISONS -->
+<section class="combinaisons-section">
+  <div class="container">
+    <div class="section-tag">Offres groupées</div>
+    <h2 class="section-title">Combinaisons <span>Recommandées</span></h2>
+    <p class="section-sub">Associez plusieurs services pour un résultat complet — et une réduction sur le total.</p>
+    <div class="combi-grid">
+      <div class="combi-card fade-in">
+        <div class="combi-who">Vous venez d'acheter une maison ancienne</div>
+        <div class="combi-title">Achat Immobilier Complet</div>
+        <div class="combi-packs"><span class="combi-pack">Pack Achat</span><span class="combi-pack">Rénovation</span><span class="combi-pack">Éclairage</span></div>
+        <div class="combi-price">À partir de 2 500 €<sup class="price-asterisk">*</sup></div>
+        <div class="combi-desc">Diagnostic → remise aux normes → éclairage moderne. Le parcours naturel d'un acheteur malin.</div>
+      </div>
+      <div class="combi-card fade-in">
+        <div class="combi-who">Proprio installé, veut du confort & du beau</div>
+        <div class="combi-title">Maison Idéale</div>
+        <div class="combi-packs"><span class="combi-pack">Éclairage</span><span class="combi-pack">Domotique</span><span class="combi-pack">Audio</span></div>
+        <div class="combi-price">À partir de 2 000 €<sup class="price-asterisk">*</sup></div>
+        <div class="combi-desc">Lumières d'ambiance + pilotage smartphone + son partout.</div>
+      </div>
+      <div class="combi-card fade-in">
+        <div class="combi-who">Maison isolée, client après cambriolage</div>
+        <div class="combi-title">Tranquillité Totale</div>
+        <div class="combi-packs"><span class="combi-pack">Sécurité</span><span class="combi-pack">Éclairage Ext.</span><span class="combi-pack">Domotique</span></div>
+        <div class="combi-price">À partir de 1 800 €<sup class="price-asterisk">*</sup></div>
+        <div class="combi-desc">Périmètre sécurisé + contrôle à distance. Dormez tranquille.</div>
+      </div>
+      <div class="combi-card fade-in">
+        <div class="combi-who">Tout remettre à plat d'un coup</div>
+        <div class="combi-title">Rénovation Totale</div>
+        <div class="combi-packs"><span class="combi-pack">Rénovation</span><span class="combi-pack">Éclairage</span><span class="combi-pack">Extérieur</span></div>
+        <div class="combi-price">À partir de 5 000 €<sup class="price-asterisk">*</sup></div>
+        <div class="combi-desc">La remise aux normes devient l'occasion de tout moderniser.</div>
+      </div>
+      <div class="combi-card fade-in">
+        <div class="combi-who">Client haut de gamme, budget conséquent</div>
+        <div class="combi-title">Pack Premium Complet</div>
+        <div class="combi-packs"><span class="combi-pack">Rénovation</span><span class="combi-pack">Domotique</span><span class="combi-pack">Sécurité</span><span class="combi-pack">Audio</span></div>
+        <div class="combi-price">À partir de 8 000 €<sup class="price-asterisk">*</sup></div>
+        <div class="combi-desc">Le chantier rêve. Toute la maison transformée.</div>
+      </div>
+      <div class="combi-card fade-in">
+        <div class="combi-who">Amoureux du jardin et de la vie dehors</div>
+        <div class="combi-title">Extérieur & Vie Dehors</div>
+        <div class="combi-packs"><span class="combi-pack">Extérieur</span><span class="combi-pack">Sécurité</span><span class="combi-pack">Éclairage</span></div>
+        <div class="combi-price">À partir de 1 500 €<sup class="price-asterisk">*</sup></div>
+        <div class="combi-desc">Terrasse éclairée + jardin sécurisé + portail automatique.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mentions-section">
+  <div class="container">
+    <div class="mentions-box">
+      <div class="mentions-star">*</div>
+      <div class="mentions-text"><strong>Mentions tarifaires —</strong> Les prix affichés sont donnés à titre <strong>purement indicatif</strong> et ne constituent pas un engagement contractuel. Ils varient selon la surface, l'état de l'installation, les matériaux et la localisation. <strong>Seul le devis écrit et signé fait foi.</strong> Les frais de déplacement sont communiqués lors de la prise de contact.</div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="container">
+    <h2>Un projet en tête ?</h2>
+    <p>Contactez-nous — on étudie votre situation et on vous propose la meilleure solution.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="tel:0695537946" class="btn" style="background:var(--black);color:var(--yellow);">📞 Appeler</a>
+      <a href="#" data-page="contact" class="btn" style="background:var(--black);color:var(--white);">📋 Demander un Devis</a>
+    </div>
+  </div>
+</div>
+</div>
+<div id="page-domotique" class="page">
+<div class="page-header">
+  <div class="container page-header-content">
+    
+    <h1>Maison <span>Connectée</span></h1>
+    <p>Pilotez votre maison depuis votre smartphone. Compatible Apple, Google et Alexa grâce au protocole Matter.</p>
+  </div>
+</div>
+
+<!-- INSTALLATIONS -->
+<section class="section-domo" id="installations">
+  <div class="container">
+    <div class="section-tag">Exemples réels</div>
+    <h2 class="section-title">Installations <span>Domotiques</span></h2>
+    <p class="section-sub">7 configurations types — du studio au logement premium. Chaque installation est adaptable à votre situation.</p>
+    <div class="installs-grid">
+      <div class="install-card fade-in">
+        <div class="install-num">Installation 01</div>
+        <span class="install-icon">🏢</span>
+        <div class="install-name">Studio Étudiant / Locatif</div>
+        <div class="install-profile">Locataire ou propriétaire bailleur — budget serré</div>
+        <div class="install-marques"><span class="install-marque">Meross</span><span class="install-marque">WiZ</span><span class="install-marque">Aqara E1</span></div>
+        <ul class="install-items">
+          <li>Hub Aqara E1 + 2 ampoules WiZ</li>
+          <li>1 prise connectée Meross</li>
+          <li>Configuration app + formation</li>
+        </ul>
+        <div class="install-price">A partir de 291 €<sup class="price-asterisk">*</sup></div>
+        <div class="install-price-note">TTC matériel + pose inclus</div>
+        <button class="install-cta" onclick="openWaModal('Studio Locatif ~291€')">💬 Être Rappelé</button>
+      </div>
+      <div class="install-card fade-in">
+        <div class="install-num">Installation 02</div>
+        <span class="install-icon">🏠</span>
+        <div class="install-name">Appartement 3 Pièces</div>
+        <div class="install-profile">Propriétaire — premier projet domotique</div>
+        <div class="install-marques"><span class="install-marque">Meross</span><span class="install-marque">WiZ</span><span class="install-marque">Aqara M2</span></div>
+        <ul class="install-items">
+          <li>Hub Aqara M2 + 4 ampoules WiZ</li>
+          <li>2 modules interrupteurs Meross</li>
+          <li>2 prises connectées + thermostat</li>
+        </ul>
+        <div class="install-price">A partir de 877 €<sup class="price-asterisk">*</sup></div>
+        <div class="install-price-note">TTC matériel + pose inclus</div>
+        <button class="install-cta" onclick="openWaModal('Appartement 3 Pièces ~877€')">💬 Être Rappelé</button>
+      </div>
+      <div class="install-card popular fade-in">
+        <div class="install-num">Installation 03 — ⭐ Le plus demandé</div>
+        <span class="install-icon">🏡</span>
+        <div class="install-name">Maison Principale + Sécurité</div>
+        <div class="install-profile">Propriétaire maison — confort + sécurité</div>
+        <div class="install-marques"><span class="install-marque">Meross</span><span class="install-marque">Aqara M2</span><span class="install-marque">WiZ</span></div>
+        <ul class="install-items">
+          <li>Hub M2 + 6 ampoules + 4 interrupteurs</li>
+          <li>3 prises + capteurs mouvement</li>
+          <li>Volets connectés (lot 2)</li>
+          <li>Configuration multi-scénarios</li>
+        </ul>
+        <div class="install-price">A partir de 2 375 €<sup class="price-asterisk">*</sup></div>
+        <div class="install-price-note">TTC matériel + pose inclus</div>
+        <button class="install-cta" onclick="openWaModal('Maison Principale + Sécurité ~2375€')">💬 Être Rappelé</button>
+      </div>
+      <div class="install-card fade-in">
+        <div class="install-num">Installation 04</div>
+        <span class="install-icon">📱</span>
+        <div class="install-name">Maison Connectée Full</div>
+        <div class="install-profile">Client tech — tout piloter depuis le téléphone</div>
+        <div class="install-marques"><span class="install-marque">Meross</span><span class="install-marque">Aqara M3</span><span class="install-marque">Somfy</span></div>
+        <ul class="install-items">
+          <li>Hub M3 Matter + Thread</li>
+          <li>Volets Somfy motorisés</li>
+          <li>Éclairage + prises multi-pièces</li>
+          <li>Radar présence FP2</li>
+        </ul>
+        <div class="install-price">A partir de 3 036 €<sup class="price-asterisk">*</sup></div>
+        <div class="install-price-note">TTC matériel + pose inclus</div>
+        <button class="install-cta" onclick="openWaModal('Maison Connectée Full ~3036€')">💬 Être Rappelé</button>
+      </div>
+      <div class="install-card fade-in">
+        <div class="install-num">Installation 05</div>
+        <span class="install-icon">⭐</span>
+        <div class="install-name">Villa Hue Premium</div>
+        <div class="install-profile">Client premium — budget illimité, qualité max</div>
+        <div class="install-marques"><span class="install-marque">Philips Hue</span><span class="install-marque">Aqara M3</span><span class="install-marque">Somfy</span></div>
+        <ul class="install-items">
+          <li>Bridge Hue + 12 ampoules color</li>
+          <li>Hub M3 + volets Somfy</li>
+          <li>Système complet multi-pièces</li>
+        </ul>
+        <div class="install-price">A partir de 5 345 €<sup class="price-asterisk">*</sup></div>
+        <div class="install-price-note">TTC matériel + pose inclus</div>
+        <button class="install-cta" onclick="openWaModal('Villa Hue Premium ~5345€')">💬 Être Rappelé</button>
+      </div>
+      <div class="install-card fade-in">
+        <div class="install-num">Installation 06</div>
+        <span class="install-icon">🖥️</span>
+        <div class="install-name">Maison Home Assistant</div>
+        <div class="install-profile">Client tech avancé — contrôle total local</div>
+        <div class="install-marques"><span class="install-marque">Home Assistant</span><span class="install-marque">Meross</span><span class="install-marque">Aqara</span></div>
+        <ul class="install-items">
+          <li>Raspberry Pi + Home Assistant</li>
+          <li>Zigbee universel toutes marques</li>
+          <li>100% local, zéro cloud</li>
+        </ul>
+        <div class="install-price">A partir de 1 490 €<sup class="price-asterisk">*</sup></div>
+        <div class="install-price-note">TTC matériel + pose inclus</div>
+        <button class="install-cta" onclick="openWaModal('Maison Home Assistant ~1490€')">💬 Être Rappelé</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUES -->
+<section class="section-domo" id="marques">
+  <div class="container">
+    <div class="section-tag">Équipements</div>
+    <h2 class="section-title">Les Marques <span>Installées</span></h2>
+    <p class="section-sub">Sélection rigoureuse — uniquement des équipements certifiés Matter, compatibles avec tous les écosystèmes.</p>
+    <div class="marques-grid">
+      <div class="marque-card fade-in">
+        <div class="marque-logo">MEROSS</div>
+        <div class="marque-usage">⚡ Backbone du chantier</div>
+        <div class="marque-desc">100% Matter sans hub. Interrupteurs, prises, volets, LED. Le plus complet du marché, marge excellente.</div>
+      </div>
+      <div class="marque-card fade-in">
+        <div class="marque-logo">AQARA</div>
+        <div class="marque-usage">🧠 Hub central + capteurs</div>
+        <div class="marque-desc">Meilleure gamme capteurs. Hub M2/M3 = cerveau parfait. Compatible HomeKit natif — le seul.</div>
+      </div>
+      <div class="marque-card fade-in">
+        <div class="marque-logo">WiZ</div>
+        <div class="marque-usage">💡 Éclairage sans hub</div>
+        <div class="marque-desc">Groupe Signify (= Philips). WiFi direct, 16M couleurs, sans hub. Même fiabilité que Hue, 5× moins cher.</div>
+      </div>
+      <div class="marque-card fade-in">
+        <div class="marque-logo">SOMFY</div>
+        <div class="marque-usage">🪟 Volets haut de gamme</div>
+        <div class="marque-desc">Référence France motorisation. Silencieux, universel. Via TaHoma : compatible Alexa/Google/HomeKit.</div>
+      </div>
+      <div class="marque-card fade-in">
+        <div class="marque-logo">PHILIPS HUE</div>
+        <div class="marque-usage">⭐ Éclairage premium</div>
+        <div class="marque-desc">Qualité lumière exceptionnelle. Proposé uniquement pour les clients premium ou déjà équipés Hue.</div>
+      </div>
+      <div class="marque-card fade-in" style="border-left-color:var(--yellow);">
+        <div class="marque-logo" style="color:#25D366;background:rgba(37,211,102,0.08);border-color:rgba(37,211,102,0.25);">MATTER</div>
+        <div class="marque-usage" style="color:var(--yellow);">🌐 Standard universel 2025+</div>
+        <div class="marque-desc">Compatible Apple HomeKit, Google Home et Amazon Alexa sans reconfiguration. <strong style="color:var(--white)">15 000+ appareils certifiés.</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AVANTAGES -->
+<section class="section-domo" id="avantages">
+  <div class="container">
+    <div class="section-tag">Pourquoi investir ?</div>
+    <h2 class="section-title">Ce Que Vous <span>Gagnez Vraiment</span></h2>
+    <p class="section-sub">Des chiffres sourcés. Source : ADEME 2024.</p>
+    <div class="avantages-grid">
+      <div class="avantage-card fade-in"><div class="avantage-kpi">-30%</div><div class="avantage-label">💡 Économies énergie</div><div class="avantage-desc">Extinction automatique, thermostat intelligent, suivi de consommation prise par prise.</div></div>
+      <div class="avantage-card fade-in"><div class="avantage-kpi">+5%</div><div class="avantage-label">🏠 Valeur immobilière</div><div class="avantage-desc">Une installation domotique augmente la valeur de revente et améliore le DPE.</div></div>
+      <div class="avantage-card fade-in"><div class="avantage-kpi">24/7</div><div class="avantage-label">🔒 Sécurité connectée</div><div class="avantage-desc">Alerte en temps réel si porte ou fenêtre ouverte en votre absence.</div></div>
+      <div class="avantage-card fade-in"><div class="avantage-kpi">1 btn</div><div class="avantage-label">😌 Confort quotidien</div><div class="avantage-desc">Scènes Film, Soirée, Départ, Nuit — une commande vocale suffit.</div></div>
+      <div class="avantage-card fade-in"><div class="avantage-kpi">100%</div><div class="avantage-label">♿ Accessibilité</div><div class="avantage-desc">Contrôle total par voix pour les personnes âgées ou à mobilité réduite.</div></div>
+      <div class="avantage-card fade-in"><div class="avantage-kpi">3–5 ans</div><div class="avantage-label">💶 ROI</div><div class="avantage-desc">L'investissement se rembourse grâce aux économies d'énergie en 3 à 5 ans.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section-domo" id="faq">
+  <div class="container">
+    <div class="section-tag">Questions</div>
+    <h2 class="section-title">FAQ <span>Domotique</span></h2>
+    <p class="section-sub">Les vraies questions que nos clients posent avant de se lancer.</p>
+    <div class="faq-grid">
+      <div class="faq-item"><button class="faq-question"><span class="faq-question-text">Faut-il refaire le câblage ?</span><span class="faq-chevron">+</span></button><div class="faq-answer"><p>Dans la majorité des cas, <strong>non</strong>. Nos modules Meross s'encastrent derrière vos interrupteurs existants en 30 min. Pour les maisons récentes (moins de 20 ans) avec tableau conforme, on connecte sans toucher au câblage.</p></div></div>
+      <div class="faq-item"><button class="faq-question"><span class="faq-question-text">Ça fonctionne sans internet ?</span><span class="faq-chevron">+</span></button><div class="faq-answer"><p><strong>Oui, en local.</strong> Les automatisations Aqara tournent sur le hub même sans connexion internet. Seul l'accès à distance (depuis l'extérieur) nécessite internet.</p></div></div>
+      <div class="faq-item"><button class="faq-question"><span class="faq-question-text">Compatible iPhone et Android ?</span><span class="faq-chevron">+</span></button><div class="faq-answer"><p><strong>Oui, les deux.</strong> Tous nos équipements sont certifiés <strong>Matter</strong> — compatible Apple HomeKit, Google Home ET Amazon Alexa sans configuration supplémentaire.</p></div></div>
+      <div class="faq-item"><button class="faq-question"><span class="faq-question-text">Et si je veux ajouter plus tard ?</span><span class="faq-chevron">+</span></button><div class="faq-answer"><p><strong>C'est fait pour.</strong> Vous ajoutez un appareil en 5 minutes sans refaire l'installation. Le standard Matter garantit que vos futurs achats seront compatibles.</p></div></div>
+      <div class="faq-item"><button class="faq-question"><span class="faq-question-text">C'est compliqué à utiliser ?</span><span class="faq-chevron">+</span></button><div class="faq-answer"><p>Non. On configure tout, on teste tout, et on fait une formation à la livraison (30 min à 2h). Vous repartez avec une maison qui fonctionne et vous savez piloter chaque scénario.</p></div></div>
+      <div class="faq-item"><button class="faq-question"><span class="faq-question-text">Quelle différence entre les marques ?</span><span class="faq-chevron">+</span></button><div class="faq-answer"><p><strong>Meross</strong> pour interrupteurs/prises/volets sans hub. <strong>Aqara</strong> pour capteurs et hub central. <strong>WiZ</strong> pour l'éclairage (groupe Signify, qualité Philips à prix raisonnable). Ces 3 marques s'associent parfaitement.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="container">
+    <h2>Votre projet domotique ?</h2>
+    <p>On discute de votre situation et on vous propose le bon niveau selon votre budget.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="tel:0695537946" class="btn" style="background:var(--black);color:var(--yellow);">📞 Appeler</a>
+      <button data-wa="Projet Domotique" class="btn" style="background:var(--black);color:#25D366;border:none;cursor:pointer;">💬 WhatsApp</button>
+      <a href="#" data-page="contact" class="btn" style="background:var(--black);color:var(--white);">📋 Demander un Devis</a>
+    </div>
+  </div>
+</div>
+</div>
+<div id="page-apropos" class="page">
+<div class="page-header">
+  <div class="container page-header-content">
+    
+    <h1>Innov <span>OHM</span></h1>
+    <p>Spécialiste habitat connecté basé à Houdain — on transforme des maisons en environnements intelligents, sécurisés et économes.</p>
+  </div>
+</div>
+
+<!-- QUI SOMMES-NOUS -->
+<section class="about-section" id="qui">
+  <div class="container">
+    <div class="about-grid">
+      <div class="fade-in">
+        <div class="section-tag">L'entreprise</div>
+        <h2 class="section-title">Qui est <span>Innov OHM ?</span></h2>
+        <div class="about-text" style="margin-top:24px;">
+          <p>Innov OHM est une entreprise spécialisée dans l'habitat connecté et les solutions électriques, basée à <strong>Houdain dans le Pas-de-Calais</strong>. On ne se positionne pas comme un électricien classique — on conçoit et installe des solutions complètes qui transforment réellement votre quotidien.</p>
+          <p>On intervient sur <strong>tout ce qui touche à l'électricité et à la connectivité</strong> : dépannage d'urgence, rénovation complète, domotique, sécurité, éclairage design, audio et home cinéma.</p>
+          <p>Notre approche est simple : on <strong>écoute d'abord</strong>, on propose ensuite. Pas de solution standard appliquée à tout le monde — chaque maison est différente, chaque projet est unique.</p>
+        </div>
+      </div>
+      <div class="fade-in">
+        <div class="stats-row">
+          <div class="stat-item"><div class="stat-num">9</div><div class="stat-label">Services proposés</div></div>
+          <div class="stat-item"><div class="stat-num">62&59</div><div class="stat-label">Départements couverts</div></div>
+        </div>
+        <div class="stats-row" style="margin-top:2px;">
+          <div class="stat-item"><div class="stat-num">Matter</div><div class="stat-label">Standard équipements</div></div>
+          <div class="stat-item"><div class="stat-num">NF C</div><div class="stat-label">15-100 conforme</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NOS VALEURS -->
+<section class="about-section" id="valeurs">
+  <div class="container">
+    <div class="section-tag">Notre approche</div>
+    <h2 class="section-title">Nos <span>Valeurs</span></h2>
+    <p class="section-sub">Ce qui guide chaque intervention, du diagnostic à la livraison.</p>
+    <div class="values-grid">
+      <div class="value-card fade-in">
+        <span class="value-icon">🎯</span>
+        <div class="value-title">Honnêteté avant tout</div>
+        <div class="value-desc">On vous dit ce dont vous avez besoin, pas ce qui nous rapporte le plus. Si un petit dépannage suffit, on vous le dit.</div>
+      </div>
+      <div class="value-card fade-in">
+        <span class="value-icon">🔧</span>
+        <div class="value-title">Travail soigné</div>
+        <div class="value-desc">Installation propre, rangée, documentée. On repart quand vous êtes satisfait. Pas de bâclé, pas de fils qui traînent.</div>
+      </div>
+      <div class="value-card fade-in">
+        <span class="value-icon">📋</span>
+        <div class="value-title">Transparence des prix</div>
+        <div class="value-desc">Devis détaillé, prix fixe garanti. Ce qui est écrit dans le devis est ce que vous payez — aucune surprise à la fin.</div>
+      </div>
+      <div class="value-card fade-in">
+        <span class="value-icon">📱</span>
+        <div class="value-title">Formation incluse</div>
+        <div class="value-desc">On vous forme à la livraison. Vous partez en sachant utiliser chaque équipement. On reste disponibles pour les questions.</div>
+      </div>
+      <div class="value-card fade-in">
+        <span class="value-icon">🚀</span>
+        <div class="value-title">Toujours en avance</div>
+        <div class="value-desc">On utilise les technologies Matter les plus récentes. Vos installations sont évolutives et compatibles avec les standards de demain.</div>
+      </div>
+      <div class="value-card fade-in">
+        <span class="value-icon">🤝</span>
+        <div class="value-title">Relation longue durée</div>
+        <div class="value-desc">Un client équipé est un client à vie. On préfère un client qui revient en confiance à un chantier qui part mal dès le départ.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ZONE D'INTERVENTION -->
+<section class="about-section" id="zone">
+  <div class="container">
+    <div class="about-grid">
+      <div class="fade-in">
+        <div class="section-tag">Secteur géographique</div>
+        <h2 class="section-title">Zone <span>d'Intervention</span></h2>
+        <p class="section-sub">Basé à Houdain (62), j'interviens dans tout le Pas-de-Calais et le Nord.</p>
+        <div style="margin-top:20px;margin-bottom:8px;font-family:var(--font-display);font-size:0.8rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--yellow);">Pas-de-Calais (62) — Secteur principal</div>
+        <div class="zone-cities">
+          <span class="zone-tag hl">Houdain</span><span class="zone-tag hl">Béthune</span><span class="zone-tag hl">Bruay-la-Buissière</span>
+          <span class="zone-tag">Noeux-les-Mines</span><span class="zone-tag">Barlin</span><span class="zone-tag">Auchel</span>
+          <span class="zone-tag">Divion</span><span class="zone-tag">Lens</span><span class="zone-tag">Liévin</span>
+          <span class="zone-tag">Arras</span><span class="zone-tag">Lillers</span><span class="zone-tag">Hersin-Coupigny</span>
+        </div>
+        <div style="margin-top:16px;margin-bottom:8px;font-family:var(--font-display);font-size:0.8rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--grey);">Nord (59) — Également couvert</div>
+        <div class="zone-cities">
+          <span class="zone-tag">Douai</span><span class="zone-tag">Valenciennes</span><span class="zone-tag">Lille</span>
+          <span class="zone-tag">Dunkerque</span><span class="zone-tag">Cambrai</span><span class="zone-tag">Maubeuge</span>
+        </div>
+      </div>
+      <div class="fade-in">
+        <div class="zone-infos">
+          <div class="zone-info-box">
+            <h4>⏱️ Délai urgence</h4>
+            <p>Intervention <strong>sous 24h</strong> pour les urgences électriques.</p>
+          </div>
+          <div class="zone-info-box">
+            <h4>🚗 Déplacement</h4>
+            <p>Frais communiqués avant. <strong>Déduits du devis</strong> si travaux confirmés.</p>
+          </div>
+          <div class="zone-info-box">
+            <h4>📡 SAV à distance</h4>
+            <p>Pour la domotique : <strong>assistance à distance</strong> depuis n'importe où.</p>
+          </div>
+          <div class="zone-info-box">
+            <h4>❓ Hors zone ?</h4>
+            <p>Appelez-nous. <strong>Les grands projets</strong> se déplacent plus loin.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="container">
+    <h2>On travaille ensemble ?</h2>
+    <p>Discutons de votre projet — sans engagement, sans pression.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="tel:0695537946" class="btn" style="background:var(--black);color:var(--yellow);">📞 Appeler</a>
+      <a href="#" data-page="contact" class="btn" style="background:var(--black);color:var(--white);">📋 Demander un Devis</a>
+    </div>
+  </div>
+</div>
+</div>
+<div id="page-contact" class="page">
+<!-- HERO -->
+<section class="contact-hero">
+  <div class="container">
+    <div class="contact-hero-inner">
+      <div class="fade-in">
+        <div class="section-tag">Contact</div>
+        <h1>Parlons de<br>votre <span>Projet</span></h1>
+        <p class="contact-hero-sub">Devis sur mesure, question technique, urgence — je réponds vite et clairement. Sans jargon, sans engagement.</p>
+        <div class="contact-promise">
+          <div class="contact-promise-item"><div class="cp-icon">⚡</div><p class="cp-text"><strong>Réponse sous 2h</strong> en journée (9h–19h)</p></div>
+          <div class="contact-promise-item"><div class="cp-icon">📍</div><p class="cp-text"><strong>Déplacement gratuit</strong> pour les projets en zone 62/59</p></div>
+          <div class="contact-promise-item"><div class="cp-icon">📋</div><p class="cp-text"><strong>Devis détaillé et transparent</strong> — pas de surprise</p></div>
+        </div>
+      </div>
+      <div class="quick-contact fade-in">
+        <a href="https://wa.me/33695537946" target="_blank" rel="noopener" class="qc-card wa">
+          <div class="qc-icon">💬</div>
+          <div class="qc-text"><div class="qc-label">WhatsApp</div><div class="qc-value">Message direct</div></div>
+          <span class="qc-badge">Réponse rapide</span><span class="qc-arrow">→</span>
+        </a>
+        <a href="tel:0695537946" class="qc-card phone">
+          <div class="qc-icon">📞</div>
+          <div class="qc-text"><div class="qc-label">Téléphone</div><div class="qc-value">06 95 53 79 46</div></div>
+          <span class="qc-badge">Lu–Sam 8h–19h</span><span class="qc-arrow">→</span>
+        </a>
+        <a href="/cdn-cgi/l/email-protection#573e39393821383f3a17303a363e3b7934383a" class="qc-card mail">
+          <div class="qc-icon">✉️</div>
+          <div class="qc-text"><div class="qc-label">Email</div><div class="qc-value"><span class="__cf_email__" data-cfemail="5b323535342d3433361b3c363a323775383436">[email&#160;protected]</span></div></div>
+          <span class="qc-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMULAIRE -->
+<section class="form-section">
+  <div class="container">
+    <div class="form-layout">
+      <div class="fade-in">
+        <h2 class="form-sidebar-title">Demander un<br><span>Devis</span> Sur Mesure</h2>
+        <p class="form-sidebar-sub">Remplissez le formulaire en 2 minutes. Je vous réponds personnellement avec une estimation claire.</p>
+        <div class="form-steps">
+          <div class="form-step">
+            <div class="fs-num">1</div>
+            <div class="fs-body"><h4>Votre projet</h4><p>Décrivez la situation et le service souhaité. Plus c'est précis, mieux c'est.</p></div>
+          </div>
+          <div class="form-step">
+            <div class="fs-num">2</div>
+            <div class="fs-body"><h4>Je vous rappelle</h4><p>Je vous contacte pour clarifier les détails et voir ce qui est faisable.</p></div>
+          </div>
+          <div class="form-step">
+            <div class="fs-num">3</div>
+            <div class="fs-body"><h4>Devis écrit</h4><p>Vous recevez un devis détaillé, transparent, sans engagement de votre côté.</p></div>
+          </div>
+        </div>
+        <div class="rt-box">
+          <div class="rt-icon">⏱️</div>
+          <div class="rt-text"><strong>Réponse garantie sous 2h</strong><span>Lundi au samedi, 9h–19h</span></div>
+        </div>
+      </div>
+      <div class="fade-in">
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group"><label for="prenom">Prénom<span class="req">*</span></label><input type="text" id="prenom" placeholder="Votre prénom" autocomplete="given-name" /></div>
+            <div class="form-group"><label for="nom">Nom</label><input type="text" id="nom" placeholder="Votre nom" autocomplete="family-name" /></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label for="telephone">Téléphone<span class="req">*</span></label><input type="tel" id="telephone" placeholder="06 XX XX XX XX" autocomplete="tel" /></div>
+            <div class="form-group"><label for="email-form">Email</label><input type="email" id="email-form" placeholder="votre@email.fr" autocomplete="email" /></div>
+          </div>
+          <div class="form-group">
+            <label for="pack">Service souhaité</label>
+            <select id="pack">
+              <option value="">— Choisissez un service —</option>
+              <option value="urgence">🔴 Urgence & Dépannage</option>
+              <option value="eclairage">💡 Éclairage Moderne</option>
+              <option value="renovation">🔧 Rénovation Électrique</option>
+              <option value="connectee">📱 Maison Connectée</option>
+              <option value="securite">🔒 Sécurité Maison</option>
+              <option value="exterieur">🌿 Extérieur & Jardin</option>
+              <option value="audio">🔊 Audio & Home Cinéma</option>
+              <option value="achat">🏠 Achat Maison (bilan)</option>
+              <option value="premium">⭐ Pack Premium</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Décrivez votre projet<span class="req">*</span></label>
+            <textarea id="message" placeholder="Ex : Je veux installer des spots LED dans mon salon et une prise extérieure dans le jardin. Maison construite en 2005, à Béthune..."></textarea>
+          </div>
+          <p class="form-legal">En soumettant ce formulaire, vous acceptez d'être recontacté par Innov OHM uniquement dans le cadre de votre demande.</p>
+          <button type="submit" class="form-submit">📋 Envoyer ma Demande de Devis →</button>
+          <p class="form-wa-alt">Vous préférez WhatsApp ? <button type="button" onclick="openWaModal('Demande formulaire')">Contactez-moi directement →</button></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ZONE -->
+<section class="zone-section">
+  <div class="container">
+    <div class="section-tag">Zone d'intervention</div>
+    <h2 class="section-title">Je me déplace dans tout le <span>Nord-Pas-de-Calais</span></h2>
+    <div class="zone-layout">
+      <div class="zone-map-box fade-in">
+        <div class="zone-map-icon">📍</div>
+        <div class="zone-map-title">Houdain (62150)</div>
+        <div class="zone-map-sub">Basé à Houdain — intervention dans un rayon de 50 km</div>
+        <div class="zone-badges">
+          <span class="zone-badge">Pas-de-Calais (62)</span>
+          <span class="zone-badge">Nord (59)</span>
+        </div>
+      </div>
+      <div class="fade-in">
+        <div class="zone-cities">
+          <div class="zone-dept">
+            <div class="zdept-header"><span class="zdept-num">62</span><span class="zdept-name">Pas-de-Calais</span></div>
+            <div class="zdept-cities">
+              <span class="zcity">Houdain</span><span class="zcity">Béthune</span><span class="zcity">Lens</span>
+              <span class="zcity">Liévin</span><span class="zcity">Bruay-la-Buissière</span><span class="zcity">Noeux-les-Mines</span>
+              <span class="zcity">Arras</span><span class="zcity">Calais</span><span class="zcity">Saint-Omer</span>
+            </div>
+          </div>
+          <div class="zone-dept">
+            <div class="zdept-header"><span class="zdept-num">59</span><span class="zdept-name">Nord</span></div>
+            <div class="zdept-cities">
+              <span class="zcity">Lille</span><span class="zcity">Douai</span><span class="zcity">Valenciennes</span>
+              <span class="zcity">Dunkerque</span><span class="zcity">Roubaix</span><span class="zcity">Tourcoing</span>
+            </div>
+          </div>
+        </div>
+        <div class="zone-note">
+          <p>📍 Pas dans la liste ? <strong>Contactez-moi quand même</strong> — je me déplace selon la nature du projet, même hors zone habituelle.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="container" style="text-align:center;">
+    <div class="section-tag">Questions fréquentes</div>
+    <h2 class="section-title">Avant de <span>Contacter</span></h2>
+  </div>
+  <div class="container">
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">Le déplacement est-il payant ?<span class="faq-chevron">▾</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Le déplacement pour établir un devis est <strong>gratuit</strong> dans la zone 62 principale (Béthune, Lens, Houdain et alentours). Pour les zones 59 ou plus lointaines, un diagnostic peut être facturé selon la distance — on en discute avant.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Combien de temps pour avoir un devis ?<span class="faq-chevron">▾</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Pour les projets simples, une estimation par <strong>téléphone ou WhatsApp</strong> en quelques minutes. Pour les projets plus complexes, je passe chez vous et vous envoyez un devis écrit sous 24–48h.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Travaillez-vous le week-end ?<span class="faq-chevron">▾</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Oui — <strong>du lundi au samedi</strong>, de 8h à 19h. Pour les urgences réelles (coupure totale, court-circuit), je suis joignable 7j/7 via WhatsApp.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Quels modes de paiement acceptez-vous ?<span class="faq-chevron">▾</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner"><strong>Virement bancaire, chèque et espèces</strong>. Pour les projets importants, un acompte de 30% est demandé à la commande pour les fournitures.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Y a-t-il une garantie sur les travaux ?<span class="faq-chevron">▾</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Oui. Tous les travaux sont couverts par la <strong>garantie légale de parfait achèvement</strong> (1 an) et la garantie décennale pour les installations structurelles. Attestation d'assurance fournie sur demande.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<div style="background:var(--yellow);padding:60px 0;">
+  <div class="container" style="text-align:center;">
+    <div style="font-family:var(--font-display);font-size:clamp(1.8rem,4vw,3rem);font-weight:900;text-transform:uppercase;color:var(--black);line-height:1;margin-bottom:10px;">Prêt à lancer votre projet ?</div>
+    <p style="color:rgba(0,0,0,0.6);margin-bottom:28px;">Un message suffit — je gère le reste.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+      <a href="tel:0695537946" class="btn" style="background:var(--black);color:var(--yellow);">📞 Appeler maintenant</a>
+      <a href="https://wa.me/33695537946" target="_blank" rel="noopener" class="btn" style="background:var(--green);color:var(--white);">💬 WhatsApp</a>
+    </div>
+  </div>
+</div>
+</div>
+<footer class="footer"><div class="container">
+<div class="footer-grid">
+<div class="footer-col"><a href="#" data-page="accueil" class="logo" style="margin-bottom:12px;display:inline-flex;"><svg style="width:20px;height:20px;margin-right:6px" viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14H12L11 22L20 10H12L13 2Z" fill="#f5c518" stroke="#f5c518" stroke-width="1" stroke-linejoin="round"/></svg> INNOV<span>OHM</span></a>
+<p>Sp&eacute;cialiste Habitat Connect&eacute; &amp; Solutions &Eacute;lectriques. Nord-Pas-de-Calais (62 &amp; 59).</p>
+<span class="certif">&#10003; Conforme NF C 15-100 &middot; Travail garanti</span></div>
+<div class="footer-col"><h4>Services</h4><ul>
+<li><a href="#" data-page="services" data-anchor="urgence">D&eacute;pannage</a></li>
+<li><a href="#" data-page="services" data-anchor="eclairage">Eclairage LED</a></li>
+<li><a href="#" data-page="services" data-anchor="renovation">R&eacute;novation</a></li>
+<li><a href="#" data-page="domotique">Domotique</a></li>
+<li><a href="#" data-page="services" data-anchor="securite">S&eacute;curit&eacute;</a></li>
+<li><a href="#" data-page="services" data-anchor="audio">Audio &amp; Cin&eacute;ma</a></li>
+</ul></div>
+<div class="footer-col"><h4>Navigation</h4><ul>
+<li><a href="#" data-page="accueil">Accueil</a></li>
+<li><a href="#" data-page="apropos">A Propos</a></li>
+<li><a href="#" data-page="contact">Contact</a></li>
+<li><a href="tel:0695537946">&#128222; 06 95 53 79 46</a></li>
+<li><a href="mailto:innovohm@gmail.com">&#9993; innovohm@gmail.com</a></li>
+</ul></div>
+<div class="footer-col"><h4>Contact</h4>
+<p style="font-size:.82rem;color:var(--grey)">Houdain &mdash; Nord-Pas-de-Calais</p>
+<a href="#" data-page="contact" class="btn btn-primary" style="margin-top:16px;padding:12px 24px;font-size:.85rem;">Demander un Devis</a>
+</div></div>
+<div class="footer-bottom">
+<p>&copy; 2025 Innov OHM &mdash; Sp&eacute;cialiste Habitat Connect&eacute;</p>
+<p style="font-size:.72rem;color:rgba(255,255,255,.15);margin-top:4px;">* Les tarifs affich&eacute;s sont indicatifs. Seul le devis sign&eacute; fait foi.</p>
+</div></div></footer>
+<div class="floating-cta">
+<a href="https://wa.me/33695537946" target="_blank" class="floating-btn float-wa">&#128172;</a>
+<a href="tel:0695537946" class="floating-btn float-phone">&#128222;</a>
+</div>
+<div class="wa-overlay" id="wa-overlay">
+<div class="wa-modal">
+<button class="wa-close" id="wa-close-btn">&#10005;</button>
+<div class="wa-modal-header"><div class="wa-modal-icon">&#128172;</div><div class="wa-modal-header-text"><h3>WhatsApp Rappel</h3><p>R&eacute;ponse rapide</p></div></div>
+<div class="wa-modal-body">
+<div class="wa-steps"><div class="wa-step active" id="step-bar-1"></div><div class="wa-step" id="step-bar-2"></div><div class="wa-step" id="step-bar-3"></div></div>
+<div class="wa-step-content active" id="wa-step-1"><div class="wa-step-label">Etape 1/3</div><div class="wa-step-title">C'est pour quand ?</div><div class="wa-step-sub">Choisissez une option</div><div class="wa-options"><button class="wa-option" data-urgency="URGENT">&#128680; Urgence</button><button class="wa-option" data-urgency="Sous 48h">&#9203; 48h</button><button class="wa-option" data-urgency="Projet">&#128197; Projet</button><button class="wa-option" data-urgency="Info">&#128172; Info</button></div></div>
+<div class="wa-step-content" id="wa-step-2"><div class="wa-step-label">Etape 2/3</div><div class="wa-step-title">Votre situation</div><textarea class="wa-input" id="wa-description" placeholder="Votre projet..." rows="3"></textarea><input type="text" class="wa-input" id="wa-pack-hint" placeholder="Service (optionnel)" /></div>
+<div class="wa-step-content" id="wa-step-3"><div class="wa-step-label">Etape 3/3</div><div class="wa-step-title">Vos coordonn&eacute;es</div><input type="text" class="wa-input" id="wa-prenom" placeholder="Votre pr&eacute;nom *" /><input type="tel" class="wa-input" id="wa-tel" placeholder="Votre num&eacute;ro *" /><div class="wa-preview" id="wa-preview"></div></div>
+</div>
+<div class="wa-modal-footer"><button class="wa-btn-back" id="btn-back" style="display:none">&#8592; Retour</button><button class="wa-btn-next" id="btn-next-1" disabled>Suivant &#8594;</button></div>
+</div></div>
+<script>
+var waStep = 1, waUrgency = "", waPack = "";
+
+function toggleMenu() {
+  var h = document.getElementById("hamburger");
+  var m = document.getElementById("mobile-menu");
+  if (!h || !m) return;
+  var o = h.classList.toggle("open");
+  m.classList.toggle("open");
+  h.setAttribute("aria-expanded", o ? "true" : "false");
+}
+
+function closeMenu() {
+  var h = document.getElementById("hamburger");
+  var m = document.getElementById("mobile-menu");
+  if (!h || !m) return;
+  h.classList.remove("open");
+  m.classList.remove("open");
+  h.setAttribute("aria-expanded", "false");
+}
+
+function showPage(id, anchor) {
+  var pages = ["accueil","services","domotique","apropos","contact"];
+  pages.forEach(function(p) {
+    var el = document.getElementById("page-" + p);
+    var nav = document.getElementById("nav-" + p);
+    if (el) el.classList.remove("active");
+    if (nav) nav.classList.remove("active");
+  });
+  var el = document.getElementById("page-" + id);
+  var nav = document.getElementById("nav-" + id);
+  if (el) el.classList.add("active");
+  if (nav) nav.classList.add("active");
+  window.scrollTo(0, 0);
+  setTimeout(function() {
+    document.querySelectorAll(".fade-in").forEach(function(e) { e.classList.add("visible"); });
+    if (anchor) {
+      var a = document.getElementById(anchor);
+      if (a) a.scrollIntoView({ behavior: "smooth" });
+    }
+  }, 80);
+}
+
+function openWaModal(pack) {
+  waPack = pack || "";
+  waStep = 1;
+  waUrgency = "";
+  resetWa();
+  var ph = document.getElementById("wa-pack-hint");
+  if (ph) ph.value = waPack;
+  document.getElementById("wa-overlay").classList.add("open");
+  document.body.style.overflow = "hidden";
+}
+
+function closeWaModal() {
+  document.getElementById("wa-overlay").classList.remove("open");
+  document.body.style.overflow = "";
+}
+
+function resetWa() {
+  [1,2,3].forEach(function(i) {
+    var c = document.getElementById("wa-step-" + i);
+    var b = document.getElementById("step-bar-" + i);
+    if (c) { c.classList.remove("active"); if (i === 1) c.classList.add("active"); }
+    if (b) { b.classList.remove("active"); if (i === 1) b.classList.add("active"); }
+  });
+  var bb = document.getElementById("btn-back");
+  var bn = document.getElementById("btn-next-1");
+  if (bb) bb.style.display = "none";
+  if (bn) { bn.disabled = true; bn.textContent = "Suivant"; }
+}
+
+function waGoNext() {
+  if (waStep === 3) { sendWa(); return; }
+  waStep++;
+  showWaStep(waStep);
+}
+
+function waGoBack() {
+  if (waStep > 1) { waStep--; showWaStep(waStep); }
+}
+
+function showWaStep(n) {
+  [1,2,3].forEach(function(i) {
+    var c = document.getElementById("wa-step-" + i);
+    var b = document.getElementById("step-bar-" + i);
+    if (c) { c.classList.remove("active"); if (i === n) c.classList.add("active"); }
+    if (b) { b.classList.remove("active"); if (i <= n) b.classList.add("active"); }
+  });
+  var bb = document.getElementById("btn-back");
+  var bn = document.getElementById("btn-next-1");
+  if (bb) bb.style.display = n > 1 ? "block" : "none";
+  if (bn) { bn.disabled = false; bn.textContent = n === 3 ? "Envoyer sur WhatsApp" : "Suivant"; }
+  if (n === 3) {
+    var desc = document.getElementById("wa-description");
+    var pack = document.getElementById("wa-pack-hint");
+    var pr = document.getElementById("wa-preview");
+    if (pr) {
+      var t = waUrgency;
+      if (pack && pack.value) t += " | " + pack.value;
+      if (desc && desc.value) t += " | " + desc.value;
+      pr.textContent = t;
+    }
+  }
+}
+
+function sendWa() {
+  var prenom = document.getElementById("wa-prenom");
+  var tel = document.getElementById("wa-tel");
+  var desc = document.getElementById("wa-description");
+  var pack = document.getElementById("wa-pack-hint");
+  if (!prenom || !prenom.value.trim()) { alert("Merci de renseigner votre prenom."); return; }
+  if (!tel || !tel.value.trim()) { alert("Merci de renseigner votre numero."); return; }
+  var msg = "Bonjour INNOV OHM !%0A%0A";
+  msg += "Urgence : " + encodeURIComponent(waUrgency) + "%0A";
+  if (pack && pack.value) msg += "Service : " + encodeURIComponent(pack.value) + "%0A";
+  if (desc && desc.value) msg += "Projet : " + encodeURIComponent(desc.value) + "%0A";
+  msg += "Prenom : " + encodeURIComponent(prenom.value) + "%0A";
+  msg += "Tel : " + encodeURIComponent(tel.value);
+  window.open("https://wa.me/33695537946?text=" + msg, "_blank");
+  closeWaModal();
+}
+
+document.addEventListener("click", function(e) {
+  var pageEl = e.target.closest("[data-page]");
+  if (pageEl) {
+    e.preventDefault();
+    if (pageEl.getAttribute("data-close")) closeMenu();
+    showPage(pageEl.getAttribute("data-page"), pageEl.getAttribute("data-anchor") || "");
+    return;
+  }
+  var waEl = e.target.closest("[data-wa]");
+  if (waEl) { openWaModal(waEl.getAttribute("data-wa")); return; }
+  if (e.target.id === "wa-close-btn" || e.target.id === "wa-overlay") { closeWaModal(); return; }
+  if (e.target.id === "btn-back") { waGoBack(); return; }
+  if (e.target.id === "btn-next-1") { waGoNext(); return; }
+  var waOpt = e.target.closest(".wa-option");
+  if (waOpt) {
+    document.querySelectorAll(".wa-option").forEach(function(b) { b.classList.remove("selected"); });
+    waOpt.classList.add("selected");
+    waUrgency = waOpt.getAttribute("data-urgency") || "";
+    var bn = document.getElementById("btn-next-1");
+    if (bn) bn.disabled = false;
+    return;
+  }
+  var faq = e.target.closest(".faq-question");
+  if (faq) {
+    var item = faq.closest(".faq-item");
+    var isOpen = item.classList.contains("open");
+    document.querySelectorAll(".faq-item").forEach(function(i) { i.classList.remove("open"); });
+    if (!isOpen) item.classList.add("open");
+    return;
+  }
+});
+
+document.addEventListener("submit", function(e) {
+  if (e.target.id === "contact-form") {
+    e.preventDefault();
+    var p = document.getElementById("prenom");
+    var t = document.getElementById("telephone");
+    var m = document.getElementById("message");
+    if (!p||!p.value.trim()||!t||!t.value.trim()||!m||!m.value.trim()) {
+      alert("Merci de remplir les champs obligatoires.");
+      return;
+    }
+    var sub = "Devis Innov OHM - " + p.value;
+    var bod = "Prenom : " + p.value + " / Tel : " + t.value + " / Message : " + m.value;
+    window.location.href = "mailto:innovohm@gmail.com?subject=" + encodeURIComponent(sub) + "&body=" + encodeURIComponent(bod);
+  }
+});
+
+setTimeout(function() {
+  document.querySelectorAll(".fade-in").forEach(function(e) { e.classList.add("visible"); });
+}, 400);
+</script>
+</body>
+</html>
